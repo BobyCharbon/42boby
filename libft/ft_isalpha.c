@@ -6,20 +6,15 @@
 /*   By: ltromber <ltromber@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/29 14:57:31 by ltromber          #+#    #+#             */
-/*   Updated: 2021/10/29 15:22:45 by ltromber         ###   ########.fr       */
+/*   Updated: 2021/10/29 16:55:12 by ltromber         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <ctype.h>
-
-int	main(void)
-{
-	int	a;
-
-	ft_isalpha(a);
-}
+#include <stdio.h>
+#include <unistd.h>
 
 int	ft_isalpha(int a)
 {
-
+	return ((a >= 'a' && a <= 'z') || (a >= 'A' && a <= 'Z'));
 }
