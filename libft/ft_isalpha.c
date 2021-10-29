@@ -6,7 +6,7 @@
 /*   By: ltromber <ltromber@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/29 14:57:31 by ltromber          #+#    #+#             */
-/*   Updated: 2021/10/29 16:44:11 by ltromber         ###   ########.fr       */
+/*   Updated: 2021/10/29 16:48:34 by ltromber         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,11 +26,5 @@ int	main(void)
 
 int	ft_isalpha(int a)
 {
-	if ((a >= 'a' && a <= 'z') || (a >= 'A' && a <= 'Z'))
-	{
-		printf("Yes\n");
-		return (1);
-	}
-	printf("No\n");
-	return (0);
+	return ((a >= 'a' && a <= 'z') || (a >= 'A' && a <= 'Z'));
 }
