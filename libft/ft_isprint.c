@@ -1,20 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ltromber <ltromber@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/29 14:57:31 by ltromber          #+#    #+#             */
-/*   Updated: 2021/10/29 16:55:12 by ltromber         ###   ########.fr       */
+/*   Created: 2021/10/29 19:34:50 by ltromber          #+#    #+#             */
+/*   Updated: 2021/10/29 19:45:20 by ltromber         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ctype.h>
-#include <stdio.h>
-#include <unistd.h>
-
-int	ft_isalpha(int a)
+int	ft_isprint(int a)
 {
-	return ((a >= 'a' && a <= 'z') || (a >= 'A' && a <= 'Z'));
+	return (a >= 0 && a <= 126);
 }
