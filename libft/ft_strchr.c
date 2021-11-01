@@ -6,7 +6,7 @@
 /*   By: ltromber <ltromber@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 15:37:40 by ltromber          #+#    #+#             */
-/*   Updated: 2021/11/01 15:40:28 by ltromber         ###   ########.fr       */
+/*   Updated: 2021/11/01 18:20:17 by ltromber         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,28 +14,42 @@
 #include <stdlib.h>
 #include <string.h>
 
+int	ft_strchr(char	*str, char c, char *dest);
 
-int main() {
+int	main(void)
+{
+	char	chaine[] = "Ah ouais gros tema la taille du raph";
+	char	dest[50];
 
-    const char * source = "The C LangjjkJAuage";
-    char * destination;
-    char * pointer;
-    int length = strlen( source );
-    
-    /* We clone the inital string */
-    destination = (char *) malloc( sizeof( char) * (length+1) );
-    strcpy( destination, source );
-        
-    /* We replace all 'a' characters */
-    while (pointer == strchr( destination, 'a' ) ) {
-        *pointer = 'A';
-    }
-    
-    /* Display result : The C LAnguAge */
-    printf( "Result : %s\n", destination );
-        
-    /* Release dynamicly allocated memory */
-    free( destination );
-    
-    return 0;
+	const char c = 't';
+	ft_strchr(chaine, c, dest);
+	printf("Source : %s\n", chaine);
+	printf("A Rechercher : %c\n", c);
+	printf("Phrase trouvee : %s\n", dest);
+}
+
+int	ft_strchr(char	*str, char c, char *dest)
+{
+	int	i;
+	int	j;
+
+	i = 0;
+	j = 0;
+
+	while (str[i] != c)
+	{
+		i++;
+	}
+	if (str[i] == c)
+	{
+		while (str[i])
+		{
+			dest[j] = str[i];
+			i++;
+			j++;
+		}
+		
+	}
+	
+	return (0);
 }
