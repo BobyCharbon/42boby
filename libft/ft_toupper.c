@@ -6,7 +6,7 @@
 /*   By: ltromber <ltromber@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 13:48:43 by ltromber          #+#    #+#             */
-/*   Updated: 2021/11/01 14:58:59 by ltromber         ###   ########.fr       */
+/*   Updated: 2021/11/01 15:17:32 by ltromber         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,10 @@
 
 int	ft_toupper(char *chaine);
 
-int main(void)
+int	main(void)
 {
 	char chaine[] = "Salut ca va ?";
+
 	printf("SOURCE : %s\n",chaine);
 	ft_toupper(chaine);
 	printf("RESULTAT : %s\n",chaine);
@@ -33,9 +34,9 @@ int	ft_toupper(char *str)
 
 	i = 0;
 	j = 0;
-	while(str[i])
+	while (str[i])
 	{
-		if(str[i] >= 'a' && str[i] <= 'z')
+		if (str[i] >= 'a' && str[i] <= 'z')
 		{
 			str[i] = str[i] - 32;
 			i++;
@@ -49,24 +50,3 @@ int	ft_toupper(char *str)
 	}
 	return (0);
 }
-
-
-
-/* 
-char * strtoupper( char * dest, const char * str ) {
-    char * result = dest;
-    while(*dest++ == toupper(*str++));
-    return result;
-}
-
-int main() {
-
-    char * input = "Diego De La Vega";
-    char result[17];
-
-    printf( "Result: %s\n", strtoupper( result, input ) );
-
-    return EXIT_SUCCESS;
-}
- */
-
