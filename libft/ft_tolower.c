@@ -6,14 +6,14 @@
 /*   By: ltromber <ltromber@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 15:20:23 by ltromber          #+#    #+#             */
-/*   Updated: 2021/11/01 15:53:32 by ltromber         ###   ########.fr       */
+/*   Updated: 2021/11/01 16:02:19 by ltromber         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 #include <stdio.h>
-#include <libft.h>
-
+#include "libft.h"
+/* 
 int	ft_tolower(char *str);
 
 int	main(void)
@@ -24,7 +24,7 @@ int	main(void)
 	ft_tolower(chaine);
 	printf("RESULTAT : %s\n", chaine);
 }
-
+ */
 int	ft_tolower(char *str)
 {
 	int	i;

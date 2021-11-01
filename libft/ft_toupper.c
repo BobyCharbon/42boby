@@ -6,7 +6,7 @@
 /*   By: ltromber <ltromber@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 13:48:43 by ltromber          #+#    #+#             */
-/*   Updated: 2021/11/01 15:53:26 by ltromber         ###   ########.fr       */
+/*   Updated: 2021/11/01 16:02:38 by ltromber         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 #include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
-#include <libft.h>
-
+#include "libft.h"
+/* 
 int	ft_toupper(char *chaine);
 
 int	main(void)
@@ -27,7 +27,7 @@ int	main(void)
 	ft_toupper(chaine);
 	printf("RESULTAT : %s\n",chaine);
 }
-
+ */
 int	ft_toupper(char *str)
 {
 	int	i;
