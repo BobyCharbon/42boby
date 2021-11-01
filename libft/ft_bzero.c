@@ -6,12 +6,13 @@
 /*   By: ltromber <ltromber@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 12:06:34 by ltromber          #+#    #+#             */
-/*   Updated: 2021/11/01 12:20:12 by ltromber         ###   ########.fr       */
+/*   Updated: 2021/11/01 15:54:07 by ltromber         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 #include <stdlib.h>
+#include <libft.h>
 
 void	ft_bzero(void *s, size_t n);
 
