@@ -1,18 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ltromber <ltromber@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/29 19:34:50 by ltromber          #+#    #+#             */
-/*   Updated: 2021/11/01 15:58:16 by ltromber         ###   ########.fr       */
+/*   Created: 2021/10/29 17:45:44 by ltromber          #+#    #+#             */
+/*   Updated: 2021/11/01 16:01:20 by ltromber         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <unistd.h>
+#include <stdio.h>
 #include "libft.h"
 
-int	ft_isprint(int a)
+int	ft_isascii(int a)
 {
-	return (a >= 0 && a <= 126);
+	if (a >= 0 && a <= 127)
+	{
+		printf("True\n");
+		//return (True);
+		return (1);
+	}
+	printf("False\n");
+	//return ("False");
+	return (0);
 }
