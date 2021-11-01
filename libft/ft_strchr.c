@@ -6,20 +6,13 @@
 /*   By: ltromber <ltromber@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 15:37:40 by ltromber          #+#    #+#             */
-<<<<<<< HEAD
-/*   Updated: 2021/11/01 16:01:52 by ltromber         ###   ########.fr       */
-=======
-/*   Updated: 2021/11/01 18:20:17 by ltromber         ###   ########.fr       */
->>>>>>> strchr
+/*   Updated: 2021/11/01 18:26:42 by ltromber         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-<<<<<<< HEAD
-#include "libft.h"
-=======
 
 int	ft_strchr(char	*str, char c, char *dest);
 
@@ -60,4 +53,3 @@ int	ft_strchr(char	*str, char c, char *dest)
 	
 	return (0);
 }
->>>>>>> strchr
