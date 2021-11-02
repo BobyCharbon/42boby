@@ -6,7 +6,7 @@
 /*   By: kingtringer <kingtringer@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 18:28:19 by ltromber          #+#    #+#             */
-/*   Updated: 2021/11/02 11:48:54 by kingtringer      ###   ########.fr       */
+/*   Updated: 2021/11/02 12:57:02 by kingtringer      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,35 +14,31 @@
 #include <stdio.h>
 #include <string.h>
 
-int	ft_strrchr(char *str, char c);
+char	*ft_strrchr(const char *str, int c);
 
 int main(void)
 {
 	char chaine[] = "Ah ouais gros tema la taille du raph";
-	//char dest[50];
 
 	const char c = 't';
 	printf("VRAI : %s\n\n", strrchr(chaine, c));
-	ft_strrchr(chaine, c);
-	printf("MOI : %s\n", ft_strrchr);
+	printf("MOI : %s\n", ft_strrchr(chaine, c));
 }
 
-int	ft_strrchr(char *str, char c)
+char	*ft_strrchr(const char *str, int c)
 {
 	int	i;
-	int	*j;
+	int	j;
 	
 	i = 0;
 	j = 0;
-
-	while (str[i] != c)
+	while (str[i])
 	{
+		if (str[i] == c)
+		{
+			j = i;
+		}
 		i++;
 	}
-	while (str[i] == c)
-	{
-		j = i;
-		i++;
-	}
-	return (str[j]);
+	return (str + j);
 }
