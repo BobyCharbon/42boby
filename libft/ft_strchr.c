@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ltromber <ltromber@student.42.fr>          +#+  +:+       +#+        */
+/*   By: kingtringer <kingtringer@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 15:37:40 by ltromber          #+#    #+#             */
-/*   Updated: 2021/11/01 18:20:17 by ltromber         ###   ########.fr       */
+/*   Updated: 2021/11/02 11:36:06 by kingtringer      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,10 @@ int	main(void)
 
 	const char c = 't';
 	ft_strchr(chaine, c, dest);
-	printf("Source : %s\n", chaine);
-	printf("A Rechercher : %c\n", c);
-	printf("Phrase trouvee : %s\n", dest);
+	printf("VRAI : %s\n\n",strchr(chaine, c));
+	//printf("Source : %s\n", chaine);
+	//printf("A Rechercher : %c\n", c);
+	printf("MOI : %s\n", dest);
 }
 
 int	ft_strchr(char	*str, char c, char *dest)
