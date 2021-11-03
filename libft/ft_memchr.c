@@ -13,7 +13,7 @@ int main(void)
     n = 10;
     c = 'c';
     printf("VRAI : %p\n\n", memchr(s, c, n));
-    printf("MOI : %p\n", ft_memchr(s, c, n));
+    printf("\nMOI : %p\n", ft_memchr(s, c, n));
 }
 
 void *ft_memchr(const void *str, int c, size_t n)
@@ -22,12 +22,18 @@ void *ft_memchr(const void *str, int c, size_t n)
 
     i = 0;
 
-    while (str[i] || str[i] <= n)
+    char *h;
+
+    h = str;
+
+    while (h[i] || h[i] <= n)
     {
-        if (str[i] == c)
+        if(h[i] == c)
         {
-            i += c;
+            return(h + i);
+
         }
-        i++;
+    i++;
     }
+    return (NULL);
 }
