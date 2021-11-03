@@ -9,7 +9,7 @@ int ft_memcmp(const void *s1, const void *s2, size_t n);
 int main(void)
 {
     int s1[] = { 54, 85, 20 };
-    int s2[] = { 53, 80, 21 };
+    int s2[] = { 54, 85, 19 };
     
     size_t n;
     n = 20;
