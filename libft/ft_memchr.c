@@ -30,8 +30,6 @@ void *ft_memchr(const void *str, int c, size_t n)
     {
         if(h[i] == c)
         {
-           // i += c;
-            write(1, h, 30);
             return(h + i);
 
         }
