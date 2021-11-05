@@ -9,12 +9,12 @@ void *ft_memmove(void *dst, const void *src, size_t len);
 int main(void)
 {
 	char src[] = "Tema la taille";
-	char dst[] = "du raph";
+	char dst[] = "du le raph";
 
 	size_t len;
 	len = 5;
 	printf("VRAI : %s\n", memmove(dst, src, len));
-	ft_memmove(dst, src, len);
+	printf("MOI : %s\n",ft_memmove(dst, src, len));
 }
  
 void *ft_memmove(void *dst, const void *src, size_t len)
@@ -25,8 +25,7 @@ void *ft_memmove(void *dst, const void *src, size_t len)
 	size_t i;
 
 	s = src;
-	char *tmp;
-	tmp = NULL;
+	char tmp[500 * sizeof(s)];
 
 
 	dest = dst;
