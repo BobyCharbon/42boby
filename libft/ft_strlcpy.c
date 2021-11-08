@@ -1,10 +1,11 @@
 #include <string.h>
+//#include <bsd/string.h>
 #include <stdio.h>
 #include <unistd.h>
 
 //#include "libft.h"
 
-char ft_strlcpy(char *dst, const char *src, size_t size)
+size_t ft_strlcpy(char *dst, const char *src, size_t size)
 {
     int i;
 
@@ -21,7 +22,7 @@ char ft_strlcpy(char *dst, const char *src, size_t size)
         i++;    
         if (size == 1)
         {
-            dst[i] = 0;
+            dst[i++] = 0;
             return(*(char*)dst);
         }
     }
@@ -29,13 +30,13 @@ char ft_strlcpy(char *dst, const char *src, size_t size)
 
 int main(void)
 {
-    char src[] = "Salut";
-    char dst[] = "XXXXX Le rat";
+    char src[] = "SalutHHHHH";
+    char dst[] = "XXXXXLe rat";
     
-    size_t size = 5;
+    size_t size = 6;
 
+    //printf("VRAI : %s\n", strlcpy(dst, src, size));
 /* 
-    printf("VRAI : %s\n", strlcpy(dst, src, size));
     char src[] = "Salut ";
     char dst[] = "XXXXX Le rat";
     size_t size = 5;
