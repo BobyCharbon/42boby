@@ -1,33 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kingtringer <kingtringer@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/27 14:18:58 by fvarrin           #+#    #+#             */
-/*   Updated: 2021/11/08 14:55:13 by kingtringer      ###   ########.fr       */
+/*   Created: 2021/10/29 17:32:40 by ltromber          #+#    #+#             */
+/*   Updated: 2021/11/08 14:52:59 by kingtringer      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <ctype.h>
 #include "libft.h"
-#include <string.h>
-#include <stdio.h>
 
-size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
+int	ft_isalnum(int c)
 {
-	size_t	i;
-	int		src_size;
-
-	src_size = ft_strlen((char *)src);
-	if (!dst || !src || dstsize <= 0)
-		return (src_size);
-	i = 0;
-	while (i < (dstsize - 1) && i < (size_t)src_size)
-	{
-		dst[i] = src[i];
-		i++;
-	}
-	dst[i] = '\0';
-	return (src_size);
+	if (ft_isalpha(c) || ft_isdigit(c))
+		return (1);
+	return (0);
 }
+
+/* 
+ft_isalnum(int c)
+{
+	return ((c >= '0' && c <= '9') || (c >= 'c' && c <= 'z') || (c >= 'A' && c <= 'Z'));
+}
+ */
