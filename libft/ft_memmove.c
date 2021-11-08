@@ -43,28 +43,4 @@ void *ft_memmove(void *dst, const void *src, size_t len)
 		}
 	}
 	return (dest);
-	
-
-
-
-	/* 
-	char *dest;
-	const char *s;
-
-	size_t i;
-
-	s = src;
-	char tmp[500 * sizeof(s)];
-
-
-	dest = dst;
-	i = 0;
-
-while (s[i] || len--)
-	{
-		tmp[i] = s[i];
-		i++; 
-	}
-	return (dst);
-	 */
 }
