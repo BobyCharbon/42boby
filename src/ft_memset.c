@@ -6,15 +6,16 @@
 /*   By: kingtringer <kingtringer@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/30 14:52:24 by ludovictrom       #+#    #+#             */
-/*   Updated: 2021/11/04 01:00:28 by kingtringer      ###   ########.fr       */
+/*   Updated: 2021/11/08 15:21:03 by kingtringer      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <unistd.h>
 #include <string.h>
+#include "libft.h"
 
-int *ft_memset(void *s, int c, size_t  n);
+void *ft_memset(void *s, int c, size_t  n);
 
 int main(void)
 {
@@ -30,7 +31,7 @@ int main(void)
     ft_memset(s, c, n);
 }
 
-int *ft_memset(void *s, int c, size_t  n)
+void *ft_memset(void *s, int c, size_t  n)
 {
     char *str;
     size_t i;

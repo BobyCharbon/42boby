@@ -1,44 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kingtringer <kingtringer@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/01 18:28:19 by ltromber          #+#    #+#             */
-/*   Updated: 2021/11/02 12:57:02 by kingtringer      ###   ########.fr       */
+/*   Created: 2021/11/01 12:06:34 by ltromber          #+#    #+#             */
+/*   Updated: 2021/11/08 15:52:41 by kingtringer      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdio.h>
+#include <strings.h>
 #include <string.h>
+#include <stdlib.h>
+#include <stdio.h>
 
-char	*ft_strrchr(const char *str, int c);
-
-int main(void)
+void	ft_bzero(void *str, size_t n)
 {
-	char chaine[] = "Ah ouais gros tema la taille du raph";
+	size_t i;
+	size_t j;
 
-	const char c = 't';
-	printf("VRAI : %s\n\n", strrchr(chaine, c));
-	printf("MOI : %s\n", ft_strrchr(chaine, c));
-}
-
-char	*ft_strrchr(const char *str, int c)
-{
-	int	i;
-	int	j;
-	
 	i = 0;
 	j = 0;
-	while (str[i])
+
+	char *ptr;
+
+	ptr = str;
+
+	while (j < (n - 1))
 	{
-		if (str[i] == c)
-		{
-			j = i;
-		}
+		j = i;
+		ptr[i] = 0;
+		ptr[i] = ptr[j];
 		i++;
 	}
-	return (str + j);
 }

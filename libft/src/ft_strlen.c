@@ -1,18 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ltromber <ltromber@student.42.fr>          +#+  +:+       +#+        */
+/*   By: kingtringer <kingtringer@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/01 16:03:23 by ltromber          #+#    #+#             */
-/*   Updated: 2021/11/01 16:04:13 by ltromber         ###   ########.fr       */
+/*   Created: 2021/10/25 13:58:07 by fvarrin           #+#    #+#             */
+/*   Updated: 2021/11/08 15:53:45 by kingtringer      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	main(void)
-{
-	char	c;
+#include "libft.h"
+#include <string.h>
 
-	c = "H";
+size_t	ft_strlen(const char *str)
+{
+	int		i;
+
+	i = 0;
+	while (str[i])
+		i++;
+	return (i);
 }
