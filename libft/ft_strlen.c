@@ -6,7 +6,7 @@
 /*   By: ltromber <ltromber@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/29 19:47:31 by ltromber          #+#    #+#             */
-/*   Updated: 2021/11/01 15:58:08 by ltromber         ###   ########.fr       */
+/*   Updated: 2021/11/09 14:19:05 by ltromber         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ int	main(void)
 
 #include "libft.h"
 
-int	ft_strlen(char *str)
+size_t	ft_strlen(const char *str)
 {
 	int	i;
 
@@ -41,6 +41,5 @@ int	ft_strlen(char *str)
 	{
 		i++;
 	}
-	printf("%d\n", i);
 	return (i);
 }
