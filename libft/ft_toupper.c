@@ -6,7 +6,7 @@
 /*   By: ltromber <ltromber@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 13:48:43 by ltromber          #+#    #+#             */
-/*   Updated: 2021/11/09 14:22:59 by ltromber         ###   ########.fr       */
+/*   Updated: 2021/11/09 14:30:53 by ltromber         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,22 +29,19 @@ int	main(void)
 }
  */
 
-int	ft_toupper(char *str)
+int	ft_toupper(int c)
 {
 	int	i;
 
 	i = 0;
-	while (str[i])
-	{
-		if (str[i] >= 'a' && str[i] <= 'z')
+	if (c >= 'a' && c <= 'z')
 		{
-			str[i] = str[i] - 32;
+			c = c - 32;
 			i++;
 		}
 		else
 		{
 			i++;
 		}
-	}
 	return (0);
 }

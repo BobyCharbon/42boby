@@ -16,7 +16,7 @@ int main(void)
 
 int ft_strncmp(const char *str1, const char *str2, size_t n)
 {
-    int i;
+    size_t i;
     int j;
 
     i = 0;
