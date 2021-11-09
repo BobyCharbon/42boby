@@ -6,7 +6,7 @@
 /*   By: kingtringer <kingtringer@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/29 17:45:44 by ltromber          #+#    #+#             */
-/*   Updated: 2021/11/02 12:32:34 by kingtringer      ###   ########.fr       */
+/*   Updated: 2021/11/08 14:55:33 by kingtringer      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,8 +26,6 @@ int	main(void)
 	}
 	else
 		printf("True\n");
-	
-	printf("%c\n",isascii(c));
 }
 
 int	ft_isascii(int a)
