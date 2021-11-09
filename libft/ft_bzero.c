@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kingtringer <kingtringer@student.42.fr>    +#+  +:+       +#+        */
+/*   By: ludovictrombert <ludovictrombert@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 12:06:34 by ltromber          #+#    #+#             */
-/*   Updated: 2021/11/03 23:33:23 by kingtringer      ###   ########.fr       */
+/*   Updated: 2021/11/09 22:53:33 by ludovictrom      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,21 +14,7 @@
 #include <string.h>
 #include <stdlib.h>
 #include <stdio.h>
-
-void	ft_bzero(void *str, size_t n);
-
-int main(void)
-{
-	char s[] = "Salut mec comment tu vas ouais ca va";
-
-	size_t n;
-	n = 10;
-	printf("AVANT : %s\n", s);
-	bzero(s, n);
-	printf("(vrai)après : >%s< RIEN\n", s); 
-	ft_bzero(s, n);
-	printf("(moi)après : >%s< RIEN\n", s);
-}
+#include "libft.h"
 
 void	ft_bzero(void *str, size_t n)
 {
