@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ltromber <ltromber@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ludovictrombert <ludovictrombert@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 13:48:43 by ltromber          #+#    #+#             */
-/*   Updated: 2021/11/01 15:18:48 by ltromber         ###   ########.fr       */
+/*   Updated: 2021/11/10 14:51:54 by ludovictrom      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,34 +15,34 @@
 #include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
+#include "libft.h"
 
-int	ft_toupper(char *chaine);
-
-int	main(void)
-{
-	char chaine[] = "Salut ca va ?";
-
-	printf("SOURCE : %s\n",chaine);
-	ft_toupper(chaine);
-	printf("RESULTAT : %s\n",chaine);
-}
-
-int	ft_toupper(char *str)
+int	ft_toupper(int c)
 {
 	int	i;
 
 	i = 0;
-	while (str[i])
+	while (c)
 	{
-		if (str[i] >= 'a' && str[i] <= 'z')
+		if (c >= 'a' && c <= 'z')
 		{
-			str[i] = str[i] - 32;
-			i++;
+			c = c - 32;
+			return (c);
 		}
 		else
 		{
-			i++;
+			return (c);
 		}
 	}
 	return (0);
+}
+
+int	main(void)
+{
+	int c;
+	c = 'h';
+
+	printf("SOURCE : %c\n",c);
+	ft_toupper(c);
+	printf("RESULTAT : %c\n",c);
 }
