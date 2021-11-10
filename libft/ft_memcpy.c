@@ -16,10 +16,9 @@ void *ft_memcpy(void *dest, const void *src, size_t n)
         *(char*)(dest + i) = *(char*) (src + i);
         i++;
     }
-    printf("dest: %s\n", dest);
     return (dest);
 }
-
+/* 
 int main(void)
 {
     char src[] = "YYYYYYYY";
@@ -32,4 +31,4 @@ int main(void)
     n = 10;
     printf("VRAI : %s\n", memcpy(dest_test, src_test, n));
     printf("MOI : %s\n", ft_memcpy(dest, src, n));
-}
+} */
