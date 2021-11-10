@@ -3,43 +3,31 @@
 /*                                                        :::      ::::::::   */
 /*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ltromber <ltromber@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ludovictrombert <ludovictrombert@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 15:20:23 by ltromber          #+#    #+#             */
-/*   Updated: 2021/11/01 15:33:16 by ltromber         ###   ########.fr       */
+/*   Updated: 2021/11/10 15:37:04 by ludovictrom      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 #include <stdio.h>
+#include <ctype.h>
+#include "libft.h"
 
-int	ft_tolower(char *str);
+int	ft_tolower(int c)
+{
+	if (c >= 'A' && c <= 'Z')
+		return (c + 32);
+	return (c);
+}
 
 int	main(void)
 {
-	char chaine[] = "Salut tu vas BIEN ?";
+	int c;
+	c = 'Z';
 
-	printf("SOURCE : %s\n", chaine);
-	ft_tolower(chaine);
-	printf("RESULTAT : %s\n", chaine);
-}
-
-int	ft_tolower(char *str)
-{
-	int	i;
-
-	i = 0;
-	while (str[i])
-	{
-		if (str[i] >= 'A' && str[i] <= 'Z')
-		{
-			str[i] = str[i] + 32;
-			i++;
-		}
-		else
-		{
-			i++;
-		}
-	}
-	return (0);
+	printf("VRAI : %c\n", tolower(c));
+	//ft_tolower(c);
+	printf("MOI : %c\n", ft_tolower(c));
 }
