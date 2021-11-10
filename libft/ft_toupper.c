@@ -6,7 +6,7 @@
 /*   By: ludovictrombert <ludovictrombert@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 13:48:43 by ltromber          #+#    #+#             */
-/*   Updated: 2021/11/10 14:51:54 by ludovictrom      ###   ########.fr       */
+/*   Updated: 2021/11/10 14:53:52 by ludovictrom      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,13 +30,11 @@ int	ft_toupper(int c)
 			return (c);
 		}
 		else
-		{
 			return (c);
-		}
 	}
 	return (0);
 }
-
+/* 
 int	main(void)
 {
 	int c;
@@ -46,3 +44,4 @@ int	main(void)
 	ft_toupper(c);
 	printf("RESULTAT : %c\n",c);
 }
+ */
