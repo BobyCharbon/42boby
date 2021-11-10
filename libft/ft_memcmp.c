@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <unistd.h>
 
-//#include "libft.h"
+#include "libft.h"
 
 int ft_memcmp(const void *s1, const void *s2, size_t n)
 {
@@ -28,6 +28,7 @@ int ft_memcmp(const void *s1, const void *s2, size_t n)
     
     return (0);
 }
+/* 
 int main(void)
 {
     const char s1_test[] = "Salut";
@@ -40,4 +41,5 @@ int main(void)
 
     printf("VRAI : %d\n\n", memcmp(s1_test, s2_test, n));
     printf("MOI: : %d\n", ft_memcmp(s1, s2, n));
-}
+} 
+*/
