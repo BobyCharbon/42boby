@@ -3,34 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kingtringer <kingtringer@student.42.fr>    +#+  +:+       +#+        */
+/*   By: ludovictrombert <ludovictrombert@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/30 14:52:24 by ludovictrom       #+#    #+#             */
-/*   Updated: 2021/11/04 01:00:28 by kingtringer      ###   ########.fr       */
+/*   Updated: 2021/11/09 22:53:27 by ludovictrom      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <unistd.h>
 #include <string.h>
+#include "libft.h"
 
-int *ft_memset(void *s, int c, size_t  n);
-
-int main(void)
-{
-    char h[] = "Salut";
-
-    size_t n;
-    int c;
-    
-    n = 2;
-    c = 'X';
-    memset(h, c, n);
-    char s[] = "Salut";
-    ft_memset(s, c, n);
-}
-
-int *ft_memset(void *s, int c, size_t  n)
+void *ft_memset(void *s, int c, size_t  n)
 {
     char *str;
     size_t i;
@@ -46,6 +31,5 @@ int *ft_memset(void *s, int c, size_t  n)
         i++;
         j++;
     }
-    return (0);
-
+    return (str);
 }
