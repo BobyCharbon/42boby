@@ -1,23 +1,7 @@
 #include <string.h>
 #include <stdio.h>
 #include <unistd.h>
-
 //#include "libft.h"
-
-void *ft_memcpy(void *dest, const void *src, size_t n);
-
-int main(void)
-{
-    char src[] = "YYYYYYYY";
-    char src_test[] = "YYYYYYYY";
-    char dest[] = "XXXXXXXX";
-    char dest_test[] = "XXXXXXXX";
-    size_t n;
-    
-    n = 20;
-    printf("VRAI : %s\n",memcpy(dest_test, src_test, n));
-    printf("MOI : %s\n", ft_memcpy(dest, src, n));
-}
 
 void *ft_memcpy(void *dest, const void *src, size_t n)
 {
@@ -28,9 +12,25 @@ void *ft_memcpy(void *dest, const void *src, size_t n)
     const char *source = src;
 
     while (n--)
-    {                      
+    {                 
         *tmp++ = *source++;
         i++;
     }
-    return dest;
+    return (tmp);
+}
+
+int main(void)
+{
+    char src[] = "YYYYYYYY";
+    char src_test[] = "YYYYYYYY";
+    char dest[] = "XXXXXXXX";
+    char dest_test[] = "XXXXXXXX";
+    size_t n;
+    
+    char *ptr = memcpy(dest_test, src_test, n);
+    char *ptr2 = ft_memcpy(dest_test, src_test, n);
+
+    n = 0;
+    printf("VRAI : %s\n", ptr);
+    printf("MOI : %s\n", ptr2);
 }
