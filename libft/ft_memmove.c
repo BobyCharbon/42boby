@@ -7,27 +7,30 @@ void *ft_memmove(void *dest, const void *src, size_t n)
 {
 
 	int i;
-	int j;
 
 	i = 0;
-	j = 0;
 
+	if (dest == NULL && src == NULL)
+		return (dest);
 	if (src > dest)
-		return (ft_memcpy(dest, src, n));
-	
-	while (n--)
+		return (memcpy(dest, src, n));
+	i = (int) n - 1;
+	while (i >= 0)
 	{
 		*(char*)(dest + i) = *(char*)(src + i);
-		i++;
+		i--;
+		if (dest + i == 0)
+			return (dest);
 	}
 	return (dest);
 }
-
+/* 
 int main(void)
 {
 	char dest[] = "Coucou toi";
 	char src[] = "T bo";
 
 	size_t n = 10;
+	printf("VRAI: %s\n", memmove(dest, src, n));
 	printf("Moi: %s\n", ft_memmove(dest, src, n));
-}
+} */
