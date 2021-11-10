@@ -6,7 +6,7 @@
 /*   By: ludovictrombert <ludovictrombert@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 15:37:40 by ltromber          #+#    #+#             */
-/*   Updated: 2021/11/10 16:05:20 by ludovictrom      ###   ########.fr       */
+/*   Updated: 2021/11/10 16:15:15 by ludovictrom      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,11 +21,16 @@ char	*ft_strchr(const char	*str, int c)
 
 	i = 0;
 
-	while (str[i] != c)
+	while (str[i])
 	{
+		if (str[i] == c)
+			return ((char*)str + i);
+		else
 		i++;
 	}
-	return (str + i);
+		if (!str[i])
+			return ((char*)str + i);
+	return (NULL);
 }
 
 int	main(void)
@@ -33,7 +38,7 @@ int	main(void)
 	char	chaine[] = "Ah ouais gros tema ta taille du raph";
 	//char	dest[50];
 
-	int c = 't';
+	int c = '\0';
 	//ft_strchr(chaine, c);
 	printf("VRAI : %s\n\n",strchr(chaine, c));
 	//printf("Source : %s\n", chaine);
