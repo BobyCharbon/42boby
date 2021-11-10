@@ -6,7 +6,7 @@
 /*   By: ludovictrombert <ludovictrombert@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/29 19:34:50 by ltromber          #+#    #+#             */
-/*   Updated: 2021/11/10 14:07:56 by ludovictrom      ###   ########.fr       */
+/*   Updated: 2021/11/10 14:22:14 by ludovictrom      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 int	ft_isprint(int a)
 {
-	return (a >= 0 && a <= 126);
+	return (a >= 32 && a <= 127);
 }
 
 int main(void)
