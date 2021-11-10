@@ -9,16 +9,19 @@ int ft_memcmp(const void *s1, const void *s2, size_t n)
     const char *str;
     const char *str2;
     int i;
+    int j;
 
     str = s1;
     str2 = s2;
     i = 0;
+    j = 0;
 
     while (n--)
     {
         if (str[i] != str2[i])
         {
-            return(str[i] - str2[i]);
+            j = str[i] - str2[i];
+            return(j);
         }
         if (str[i] == str2[i])
         {
