@@ -1,13 +1,10 @@
 #include <string.h>
 #include <stdio.h>
 #include <unistd.h>
-
 #include "libft.h"
 
-void *ft_memmove(void *dst, const void *src, size_t len)
+void *ft_memmove(void *dest, const void *src, size_t n)
 {
-	const char *tmp = src;
-	char *dest = dst;
 
 	int i;
 	int j;
@@ -15,14 +12,22 @@ void *ft_memmove(void *dst, const void *src, size_t len)
 	i = 0;
 	j = 0;
 
-	while (len--)
+	if (src > dest)
+		return (ft_memcpy(dest, src, n));
+	
+	while (n--)
 	{
-		if (tmp[j])
-		{
-			dest[i] = tmp[j];
-			i++;
-			j++;
-		}
+		*(char*)(dest + i) = *(char*)(src + i);
+		i++;
 	}
 	return (dest);
+}
+
+int main(void)
+{
+	char dest[] = "Coucou toi";
+	char src[] = "T bo";
+
+	size_t n = 10;
+	printf("Moi: %s\n", ft_memmove(dest, src, n));
 }
