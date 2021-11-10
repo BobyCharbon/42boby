@@ -6,7 +6,7 @@
 /*   By: ludovictrombert <ludovictrombert@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 15:20:23 by ltromber          #+#    #+#             */
-/*   Updated: 2021/11/10 15:37:04 by ludovictrom      ###   ########.fr       */
+/*   Updated: 2021/11/10 15:50:04 by ludovictrom      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int	ft_tolower(int c)
 		return (c + 32);
 	return (c);
 }
-
+/* 
 int	main(void)
 {
 	int c;
@@ -30,4 +30,4 @@ int	main(void)
 	printf("VRAI : %c\n", tolower(c));
 	//ft_tolower(c);
 	printf("MOI : %c\n", ft_tolower(c));
-}
+} */
