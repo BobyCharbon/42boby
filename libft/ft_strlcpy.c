@@ -5,20 +5,25 @@
 
 //#include "libft.h"
 
-size_t ft_strlcpy(char *dest, const char *src, size_t n)
+size_t ft_strlcpy(char *dest, const char *src, size_t dest_size)
 {
-    int i;
+    size_t i;
 
     i = 0;
 
-    // n = sizeof(dest);
+    int src_size;
 
-    while (n-- && src[i])
+    src_size = strlen((char*) src);
+
+    if (!dest || !src || dest_size <= 0)
+        return (src_size);
+
+    while (i < (dest_size - 1) && i < (size_t) src_size)
     {
         dest[i] = src[i];
         i++;
     }
-    if (!src + i++)
+    if (!src + i)
     {
         dest[i] = 0;
         return (strlen(src));
@@ -33,8 +38,8 @@ int main(void)
     char src[] = "YYYY";
     char dest[] = "XX";
     
-    size_t n = 2;
+    size_t dest_size = 2;
 
-    printf("VRAI : %lu\n", strlcpy(dest, src, sizeof(dest)));
-    printf("MOI : %lu\n", ft_strlcpy(dest, src, n));
+    printf("MOI : %lu\n", ft_strlcpy(dest, src, dest_size));
+    printf("VRAI : %lu\n", strlcpy(dest, src, dest_size));
 }
