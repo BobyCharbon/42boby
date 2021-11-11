@@ -2,8 +2,7 @@
 //#include <bsd/string.h>
 #include <stdio.h>
 #include <unistd.h>
-
-//#include "libft.h"
+#include "libft.h"
 
 size_t ft_strlcpy(char *dest, const char *src, size_t dest_size)
 {
@@ -15,7 +14,7 @@ size_t ft_strlcpy(char *dest, const char *src, size_t dest_size)
 
     src_size = strlen((char*) src);
 
-    if (!dest || !src || dest_size <= 0)
+    if (dest_size <= 0)
         return (src_size);
 
     while (i < (dest_size - 1) && i < (size_t) src_size)
@@ -23,20 +22,14 @@ size_t ft_strlcpy(char *dest, const char *src, size_t dest_size)
         dest[i] = src[i];
         i++;
     }
-    if (!src + i)
-    {
-        dest[i] = 0;
-        return (strlen(src));
-    }
-
-
-    return (0);
+    dest[i] = 0;
+    return (src_size);
 }
 
 int main(void)
 {
     char src[] = "YYYY";
-    char dest[] = "XX";
+    char dest[] = "";
     
     size_t dest_size = 2;
 
