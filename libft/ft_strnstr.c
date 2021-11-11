@@ -6,7 +6,7 @@
 
 char    *ft_strnstr(const char *big, const char *little, size_t n)
 {
-    int i;
+    size_t i;
     int j;
     int k;
 
@@ -24,6 +24,8 @@ char    *ft_strnstr(const char *big, const char *little, size_t n)
         {
             while((big[i + j] == little[j]) && (little[j]))
                 j++;
+            if (!little[1])
+                return ((char*) &big[i]);
             if (!little[j] && n >= (i + j))
                 return ((char*) &big[i]);
         }
@@ -34,12 +36,12 @@ char    *ft_strnstr(const char *big, const char *little, size_t n)
 
 int main(void)
 {
-    const char big[] = "Salut le rat";
-    const char little[] = "le";
+    const char big[] = "c";
+    const char little[] = "c";
 
     size_t n;
 
-    n = 40;
+    n = 1;
 
     printf("VRAI: %s\n", strnstr(big, little, n));
     printf("Moi: %s\n", ft_strnstr(big, little, n));
