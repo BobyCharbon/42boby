@@ -6,7 +6,7 @@
 /*   By: ludovictrombert <ludovictrombert@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 15:37:40 by ltromber          #+#    #+#             */
-/*   Updated: 2021/11/10 16:15:15 by ludovictrom      ###   ########.fr       */
+/*   Updated: 2021/11/11 02:55:49 by ludovictrom      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ char	*ft_strchr(const char	*str, int c)
 			return ((char*)str + i);
 	return (NULL);
 }
-
+/* 
 int	main(void)
 {
 	char	chaine[] = "Ah ouais gros tema ta taille du raph";
@@ -45,3 +45,4 @@ int	main(void)
 	//printf("A Rechercher : %c\n", c);
 	printf("MOI : %s\n", ft_strchr(chaine, c));
 }
+ */
