@@ -25,7 +25,7 @@ size_t ft_strlcpy(char *dest, const char *src, size_t dest_size)
     dest[i] = 0;
     return (src_size);
 }
-
+/* 
 int main(void)
 {
     char src[] = "YYYY";
@@ -35,4 +35,4 @@ int main(void)
 
     printf("MOI : %lu\n", ft_strlcpy(dest, src, dest_size));
     printf("VRAI : %lu\n", strlcpy(dest, src, dest_size));
-}
+} */
