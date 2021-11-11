@@ -1,0 +1,59 @@
+{
+    // Utilisez IntelliSense pour en savoir plus sur les attributs possibles.
+    // Pointez pour afficher la description des attributs existants.
+    // Pour plus d'informations, visitez : https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "LaunchOFFICIEL",
+            "type": "lldb",
+            "request": "launch",
+            "stopAtEntry": true,
+            "program": "${workspaceFolder}/libft/${fileBasenameNoExtension}",
+            "args": ["-arg1", "-arg2"], 
+        },
+        {
+            "name": "run-writtenassignment",
+            "type": "cppdbg",
+            "request": "launch",
+            "preLaunchTask": "${workspaceFolder}/libft/${fileBasenameNoExtension}",  // <-------------- ADDED!
+            "program": "${workspaceFolder}/libft/${fileBasenameNoExtension}",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "preLaunchTask": "${workspaceFolder}/libft/a.out",
+            "name": "VRAI",
+            "stopAtEntry": true,
+            "program": "${workspaceFolder}/libft/a.out",
+            //"program": "${workspaceFolder}/libft/${fileBasenameNoExtension}",
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "preLaunchTask": "${workspaceFolder}/libft/${fileBasenameNoExtension}",
+            "name": "GCC avec CMD+R",
+            "stopAtEntry": true,
+            "program": "${workspaceFolder}/libft/${fileBasenameNoExtension}",
+            //"program": "${workspaceFolder}/libft/${fileBasenameNoExtension}",
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug",
+            "program": "${workspaceFolder}/libft/a.out",
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
