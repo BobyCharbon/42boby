@@ -33,7 +33,7 @@ char    *ft_strnstr(const char *big, const char *little, size_t n)
     }
     return (NULL);
 }
-
+/* 
 int main(void)
 {
     const char big[] = "c";
@@ -45,4 +45,4 @@ int main(void)
 
     printf("VRAI: %s\n", strnstr(big, little, n));
     printf("Moi: %s\n", ft_strnstr(big, little, n));
-}
+} */
