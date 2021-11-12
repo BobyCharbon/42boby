@@ -5,12 +5,15 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "LaunchOFFICIEL",
             "type": "lldb",
             "request": "launch",
+            "preLaunchTask": "${fileDirname}/${fileBasenameNoExtension}",
+            "name": "GCC ALL CMD+R",
             "stopAtEntry": true,
-            "program": "${workspaceFolder}/libft/${fileBasenameNoExtension}",
-            "args": ["-arg1", "-arg2"], 
+            "program": "${fileDirname}/${fileBasenameNoExtension}",
+            //"program": "${workspaceFolder}/libft/${fileBasenameNoExtension}",
+            "args": [],
+            "cwd": "${workspaceFolder}"
         },
         {
             "type": "lldb",
