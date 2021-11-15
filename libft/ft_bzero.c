@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kingtringer <kingtringer@student.42.fr>    +#+  +:+       +#+        */
+/*   By: ludovictrombert <ludovictrombert@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 12:06:34 by ltromber          #+#    #+#             */
-/*   Updated: 2021/11/03 23:33:23 by kingtringer      ###   ########.fr       */
+/*   Updated: 2021/11/15 18:41:32 by ludovictrom      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ int main(void)
 	char s[] = "Salut mec comment tu vas ouais ca va";
 
 	size_t n;
-	n = 10;
+	n = 0;
 	printf("AVANT : %s\n", s);
 	bzero(s, n);
 	printf("(vrai)après : >%s< RIEN\n", s); 
@@ -41,6 +41,9 @@ void	ft_bzero(void *str, size_t n)
 	char *ptr;
 
 	ptr = str;
+
+	if (n <= 0)
+		return (*str);
 
 	while (j < (n - 1))
 	{
