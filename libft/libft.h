@@ -6,7 +6,11 @@
 /*   By: ludovictrombert <ludovictrombert@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 15:51:42 by ltromber          #+#    #+#             */
+<<<<<<< HEAD
 /*   Updated: 2021/11/09 22:24:39 by ludovictrom      ###   ########.fr       */
+=======
+/*   Updated: 2021/11/10 16:53:27 by ludovictrom      ###   ########.fr       */
+>>>>>>> strrchr
 /*                                                                            */
 /* ************************************************************************** */
 
