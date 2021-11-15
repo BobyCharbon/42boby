@@ -31,7 +31,7 @@ size_t ft_strlcat(char *dest, const char *src, size_t destsize)
 
     printf("DEST: %s\n", dest);
 }
-
+/* 
 int main(void)
 {
     char dest [] = "XXXXXXXXXXX";
@@ -42,4 +42,4 @@ int main(void)
     printf("Moi: %lu\n", ft_strlcat(dest, src, destsize));
     printf("VRAI: %lu\n", strlcat(dest, src, destsize));
 
-}
+} */

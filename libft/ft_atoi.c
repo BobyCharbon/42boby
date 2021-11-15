@@ -40,11 +40,11 @@ int ft_atoi (const char *str)
     }
     return(resultat * signe);
 }
-
+/* 
 int main(void)
 {
     char str[] = "  -200038373";
 
     printf("Moi: %d\n", ft_atoi(str));
     printf("VRAI: %d\n", atoi(str));
-}
+} */
