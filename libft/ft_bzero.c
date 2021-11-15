@@ -6,7 +6,7 @@
 /*   By: ludovictrombert <ludovictrombert@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 12:06:34 by ltromber          #+#    #+#             */
-/*   Updated: 2021/11/15 18:41:32 by ludovictrom      ###   ########.fr       */
+/*   Updated: 2021/11/15 18:42:51 by ludovictrom      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include "libft.h"
-
+/* 
 void	ft_bzero(void *str, size_t n);
 
 int main(void)
@@ -30,7 +30,7 @@ int main(void)
 	ft_bzero(s, n);
 	printf("(moi)après : >%s< RIEN\n", s);
 }
-
+ */
 void	ft_bzero(void *str, size_t n)
 {
 	size_t i;
