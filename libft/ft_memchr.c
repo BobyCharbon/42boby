@@ -1,34 +1,21 @@
 #include <string.h>
 #include <unistd.h>
 #include <stdio.h>
-
-void *ft_memchr(const void *s, int c, size_t n);
-
-int main(void)
-{
-    char s[] = "Salut ca va";
-    int c;
-    size_t n;
-
-    n = 10;
-    c = 'c';
-    printf("VRAI : %p\n\n", memchr(s, c, n));
-    printf("\nMOI : %p\n", ft_memchr(s, c, n));
-}
+#include "libft.h"
 
 void *ft_memchr(const void *str, int c, size_t n)
 {
-    int i;
+    size_t i;
 
     i = 0;
- 
+
     const char *h;
 
     h = str;
 
-    while (h[i] || i <= n)
+    while (i < n)
     {
-        if(h[i] == c)
+        if(h[i] == c
         {
             return((void *)h + i);
 
@@ -37,3 +24,12 @@ void *ft_memchr(const void *str, int c, size_t n)
     }
     return (NULL);
 }
+/* 
+int main(void)
+{
+    char str[] = "/|\x12\xff\x09\x42\042\42|\\";
+    int c = '\x42';
+    size_t n = 2;
+    printf("VRAI : %s\n", memchr(str, c, n));
+    printf("Moi : %s\n", ft_memchr(str, c, n));
+} */
