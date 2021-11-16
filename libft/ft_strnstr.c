@@ -4,30 +4,28 @@
 #include "libft.h"
 
 
-char    *ft_strnstr(const char *big, const char *little, size_t n)
+char    *ft_strnstr(const char *str1, const char *str2, size_t n)
 {
     size_t i;
     int j;
-    int k;
 
     i = 0;
     j = 0;
-    k = 0;
 
-    if (!little[i])
-        return ((char*) &big[i]);
-    if (!big[i])
+    if (!str2[i])
+        return ((char*) &str1[i]);
+    if (!str1[i])
         return (NULL);
-    while (big[i] && n--)
+    while (str1[i] && n--)
     {
-        if (big[i] == little[i])
+        if (str1[i] == str2[j])
         {
-            if (!little[1])
-                return ((char*) &big[i]);
-            while((big[i + j] == little[j]) && (little[j]))
+            while((str1[i + j] == str2[j]) && (str2[j]))
                 j++;
-            if (!little[j] && n >= (i + j))
-                return ((char*) &big[i]);
+            if (!str2[j])
+                return ((char*) &str1[i]);
+            if (!str2[j] && n >= (i + j))
+                return ((char*) &str1[i]);
         }
         i++;
     }
@@ -36,13 +34,11 @@ char    *ft_strnstr(const char *big, const char *little, size_t n)
 
 int main(void)
 {
-    const char big[] = "Salut mec";
-    const char little[] = "Salut";
+    const char str1[] = "AAAAAAAAAAAAA";
+    const char str2[] = "\0";
 
-    size_t n;
+    size_t n = sizeof(str1);
 
-    n = 5;
-
-    printf("VRAI: %s\n", strnstr(big, little, n));
-    printf("Moi: %s\n", ft_strnstr(big, little, n));
-}
+    printf("VRAI: %s\n", strnstr(str1, str1, n));
+    printf("Moi: %s\n", ft_strnstr(str1, str1, n));
+} */
