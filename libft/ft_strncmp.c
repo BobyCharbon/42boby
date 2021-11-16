@@ -16,20 +16,26 @@ int main(void)
 
 int ft_strncmp(const char *str1, const char *str2, size_t n)
 {
-    int i;
-    int j;
-
+    size_t i;
     i = 0;
 
-    while ((i <= n) || (str1[i] || str2[i]))
-    {
-        if (str1[i] != str2[i])
-        {
-            j = str1[i] - str2[i];
-            //i = '0' + j;
-            return (j);
-        }
+    if ((!*str1 && !*str2) || n == 0)
+        return (0);
+    while ((str1[i] == str2[i]) && i < n - 1 && str1[i] && str2[i])
         i++;
-    }
-    return (i);
+    if (str1[i] != str2[i])
+        return (((unsigned char*) str1)[i] - ((unsigned char*) str2)[i]);
+
+    return (0);
 }
+/* 
+int main(void)
+{
+    char str1[] = "atoms\0\0\0\0";
+    char str2[] = "atoms\0abc";
+    size_t n = 7;
+    
+    printf("VRAI: %d\n", strncmp(str1, str2, n));
+    printf("Moi: %d\n", ft_strncmp(str1, str2, n));
+}
+ */
