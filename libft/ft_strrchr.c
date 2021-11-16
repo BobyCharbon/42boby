@@ -6,7 +6,7 @@
 /*   By: ludovictrombert <ludovictrombert@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 18:28:19 by ltromber          #+#    #+#             */
-/*   Updated: 2021/11/16 16:42:15 by ludovictrom      ###   ########.fr       */
+/*   Updated: 2021/11/16 17:05:49 by ludovictrom      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,28 +23,25 @@ char	*ft_strrchr(const char *str, int c)
 	i = 0;
 	j = 0;
 	
-	str_size = strlen(str);
-	i = str_size;
+	str_size = ft_strlen(str);
 	if (!str[i])
 		return (NULL);
-	while (str_size--)
-	{
-		if (((char*) str)[i] == (char) c)
-			return ((char*) str + i);
-		i--;
-	}
+	i = str_size;
 	if ((char) c == '\0')
 		return ((char*) str + i);
-	if (!i)
-		return (NULL);
-	return ((char *)str + i);
+	while (str_size--)
+	{
+		if (str[str_size] == (char) c)
+			return ((char*) str + str_size);
+	}
+	return (NULL);
 }
-/* 
-int main(void)
-{
-	char chaine[] = "Salut le rat";
 
-	char c = 'l';
+/* int main(void)
+{
+	char chaine[] = "123456789";
+
+	char c = 'a';
 	printf("VRAI : %s\n\n", strrchr(chaine, c));
 	printf("MOI : %s\n", ft_strrchr(chaine, c));
 } */
