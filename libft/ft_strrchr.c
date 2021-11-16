@@ -6,7 +6,7 @@
 /*   By: ludovictrombert <ludovictrombert@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 18:28:19 by ltromber          #+#    #+#             */
-/*   Updated: 2021/11/15 19:40:22 by ludovictrom      ###   ########.fr       */
+/*   Updated: 2021/11/15 19:41:45 by ludovictrom      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ char	*ft_strrchr(const char *str, int c)
 		return ((char*) str + i);
 	return ((char *)str + j);
 }
-
+/* 
 int main(void)
 {
 	char chaine[] = "";
@@ -45,4 +45,4 @@ int main(void)
 	const char c = 't';
 	printf("VRAI : %s\n\n", strrchr(chaine, c));
 	printf("MOI : %s\n", ft_strrchr(chaine, c));
-}
+} */
