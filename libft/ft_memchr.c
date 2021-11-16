@@ -9,17 +9,10 @@ void *ft_memchr(const void *str, int c, size_t n)
 
     i = 0;
 
-    const char *h;
-
-    h = str;
-
     while (i < n)
     {
-        if(h[i] == c)
-        {
-            return((void *)h + i);
-
-        }
+        if ((unsigned char) c == ((unsigned char*) str)[i])
+            return((void *)str + i);
     i++;
     }
     return (NULL);
@@ -27,9 +20,11 @@ void *ft_memchr(const void *str, int c, size_t n)
 /* 
 int main(void)
 {
-    char str[] = "/|\x12\xff\x09\x42\042\42|\\";
-    int c = '\x42';
-    size_t n = 2;
+    char str[] = {0, 1, 2 ,3 ,4 ,5};
+    int c = 258;
+    size_t n = 3;
     printf("VRAI : %s\n", memchr(str, c, n));
     printf("Moi : %s\n", ft_memchr(str, c, n));
+    printf("CHECK : %s\n", memchr(str, 2 + 256, n));
+    // printf("%s\n"ft_memchr(str, 2 + 256, n) == str + 2);
 } */
