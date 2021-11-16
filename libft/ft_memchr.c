@@ -13,9 +13,9 @@ void *ft_memchr(const void *str, int c, size_t n)
 
     h = str;
 
-    while (h[i] || i <= n)
+    while (i < n)
     {
-        if(h[i] == c)
+        if(h[i] == (char*) c)
         {
             return((void *)h + i);
 
@@ -25,3 +25,11 @@ void *ft_memchr(const void *str, int c, size_t n)
     return (NULL);
 }
 
+int main(void)
+{
+    char str[] = "/|\x12\xff\x09\x42\042\42|\\";
+    int c = '\x42';
+    size_t n = 2;
+    printf("VRAI : %s\n", memchr(str, c, n));
+    printf("Moi : %s\n", ft_memchr(str, c, n));
+}
