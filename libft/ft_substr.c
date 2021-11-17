@@ -28,6 +28,7 @@ char *ft_substr(char const *s, unsigned int start, size_t len)
     return ((char*) s2);    
 }
 /* 
+int main(void)
 {
     unsigned int start = 20;
 
