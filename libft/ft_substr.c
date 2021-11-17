@@ -25,19 +25,10 @@ char *ft_substr(char const *s, unsigned int start, size_t len)
         i++;
         start++;
     }
-<<<<<<< HEAD
-
-    // printf("S: %s\n", s);
-    // printf("S2: %s\n", s2);
-=======
-    ((char*) s2)[i] = 0;
->>>>>>> substr
     return ((char*) s2);    
 }
 /* 
-int main(void)
 {
-    const char s[] = "Salut le rat";
     unsigned int start = 20;
 
     size_t len = 16;
