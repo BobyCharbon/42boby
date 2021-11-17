@@ -1,0 +1,21 @@
+/* {
+    "type": "shell",
+    "label": "build-writtenassignment",
+    "command": "/usr/bin/g++",
+    "args": [
+        "-g",
+        "${workspaceFolder}${fileBasename}",
+        "-o",
+        "${workspaceFolder}${fileBasenameNoExtension}"
+    ],
+    "options": {
+        "cwd": "/usr/bin"
+    },
+    "problemMatcher": [
+        "$gcc"
+    ],
+    "group": {
+        "kind": "build",
+        "isDefault": true 
+    }
+} */

@@ -1,0 +1,30 @@
+{
+    // Utilisez IntelliSense pour en savoir plus sur les attributs possibles.
+    // Pointez pour afficher la description des attributs existants.
+    // Pour plus d'informations, visitez : https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "preLaunchTask": "${fileDirname}/${fileBasenameNoExtension}",
+            "name": "GCC ALL CMD+R",
+            "stopAtEntry": true,
+            "program": "${fileDirname}/${fileBasenameNoExtension}",
+            //"program": "${workspaceFolder}/libft/${fileBasenameNoExtension}",
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "preLaunchTask": "${workspaceFolder}/libft/${fileBasenameNoExtension}",
+            "name": "GCC avec CMD+R",
+            "stopAtEntry": true,
+            "program": "${workspaceFolder}/libft/${fileBasenameNoExtension}",
+            //"program": "${workspaceFolder}/libft/${fileBasenameNoExtension}",
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+    ]
+}
