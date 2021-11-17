@@ -2,8 +2,7 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <stdlib.h>
-
-//#include "libft.h"
+#include "libft.h"
 
 char *ft_substr(char const *s, unsigned int start, size_t len)
 {
@@ -38,3 +37,4 @@ int main(void)
     size_t len = 16;
     printf("RESULTAT : %s\n", ft_substr(s, start, len));
 }
+*/
