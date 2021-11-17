@@ -14,14 +14,14 @@ char *ft_strdup(const char *str)
 
     if (!str_duplicate)
         return (NULL);
-    ft_strcpy(str_duplicate, str);
+    ft_strlcpy(str_duplicate, str, *(size_t*) str);
     return (str_duplicate);
 }
 
 /* 
 int main(void)
 {
-    char str[] = "this is a normal test";
+    char str[] = "I malloc so I am.";
+    printf("str_duplicate: %s\n", str_duplicate);
     ft_strdup(str);
-    // printf("str_duplicate: %s\n", str_duplicate);
 } */
