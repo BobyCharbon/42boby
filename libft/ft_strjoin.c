@@ -17,17 +17,12 @@ char *ft_strjoin(const char *s1, const char *s2)
     s1_size = ft_strlen((char*) s1);
     s2_size = ft_strlen((char*) s2);
     dest = malloc(sizeof(char) * (s1_size + s2_size + 1));
-    // str = malloc(sizeof(char) * (s1_len + s2_len + 1));
     if (dest == NULL)
         return (NULL);
     while (*s1)
-    {
-            dest[i++] = *s1++;
-    }
+        dest[i++] = *s1++;
     while (*s2)
-    {
         dest[i++] = *s2++;
-    }
     dest[i] = 0;
     return (dest);
 }
