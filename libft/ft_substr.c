@@ -29,7 +29,7 @@ char *ft_substr(char const *s, unsigned int start, size_t len)
     ((char*) s2)[i] = 0;
     return ((char*) s2);    
 }
-
+/* 
 int main(void)
 {
     const char s[] = "Salut le rat";
