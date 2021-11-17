@@ -2,8 +2,7 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <stdlib.h>
-
-//#include "libft.h"
+#include "libft.h"
 
 char *ft_substr(char const *s, unsigned int start, size_t len)
 {
@@ -25,12 +24,11 @@ char *ft_substr(char const *s, unsigned int start, size_t len)
         start++;
     }
 
-
     // printf("S: %s\n", s);
     // printf("S2: %s\n", s2);
     return ((char*) s2);    
 }
-
+/* 
 int main(void)
 {
     const char s[] = "Salut le rat";
@@ -38,4 +36,4 @@ int main(void)
 
     size_t len = sizeof((char*)s);
     printf("RESULTAT : %s\n", ft_substr(s, start, len));
-}
+} */
