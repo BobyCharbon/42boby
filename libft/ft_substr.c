@@ -25,8 +25,9 @@ char *ft_substr(char const *s, unsigned int start, size_t len)
         start++;
     }
 
-    printf("S: %s\n", s);
-    printf("S2: %s\n", s2);
+
+    // printf("S: %s\n", s);
+    // printf("S2: %s\n", s2);
     return ((char*) s2);    
 }
 
