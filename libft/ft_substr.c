@@ -14,27 +14,27 @@ char *ft_substr(char const *s, unsigned int start, size_t len)
     i = 0;
 
     s2 = malloc(len + 1);
-
+    if (s == NULL)
+        return (NULL);
     if (s2 == NULL)
         return ((char*) s2);
-
-    while (len--)
+    if ((start > strlen(s)))
+        return ((char*) s2);
+    while (len-- >= 1)
     {
         ((char*) s2)[i] = ((char*) s) [start];
         i++;
         start++;
     }
-
-    printf("S: %s\n", s);
-    printf("S2: %s\n", s2);
+    ((char*) s2)[i] = 0;
     return ((char*) s2);    
 }
 
 int main(void)
 {
     const char s[] = "Salut le rat";
-    unsigned int start = 6;
+    unsigned int start = 20;
 
-    size_t len = sizeof((char*)s);
+    size_t len = 16;
     printf("RESULTAT : %s\n", ft_substr(s, start, len));
 }
