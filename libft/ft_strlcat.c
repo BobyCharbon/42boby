@@ -9,31 +9,19 @@ size_t ft_strlcat(char *dest, const char *src, size_t len)
     size_t j;
     size_t src_len;
     size_t dest_len;
-    size_t res;
 
+    src_len = ft_strlen(src);
+    dest_len = ft_strlen(dest);
     i = 0;
-    
-    src_len = strlen(src);
-    dest_len = strlen(dest);
-
-    j = dest_len - src_len;
-
-    // if(!*dest || !*src || len <= 0)
-    if (dest_len <= len)
-        res = dest_len + src_len;
-    else
-        res = src_len + len;
-    while (j < dest_len && i < src_len)
-    {
-        ((unsigned char*) dest)[j] = ((unsigned char*) src)[i];
-        j++;
-        i++;
-    }
-    dest[j] = 0;
-    return (res);
+    j = dest_len;
+    if (!dest || !src || len <= 0 || len < dest_len)
+        return (src_len + len);
+    while (j < (len - 1) && i < (src_len))
+        dest[j++] = src[i++];
+    dest[j] = '\0';
+    return (src_len + dest_len);
 }
-
-
+/* 
 int main(void)
 {
     char dest [] = "XXXXXXXXXX";
@@ -48,4 +36,4 @@ int main(void)
     printf("VRAI: %zu\n", strlcat(dest_test, src_test, len));
     printf("\ndest_test : %s\n", dest_test);
     printf("dest      : %s\n", dest);
-}
+} */
