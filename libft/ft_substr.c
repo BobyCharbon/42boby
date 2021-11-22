@@ -12,29 +12,35 @@ char *ft_substr(char const *s, unsigned int start, size_t len)
     int i;
 
     i = 0;
-
-    s2 = malloc(len + 1);
+    if (len > (size_t)(s))
+        s2 = malloc(len * sizeof(char) + 1);
+    else
+        s2 = malloc(sizeof(s));
     if (s == NULL)
         return (NULL);
     if (s2 == NULL)
         return ((char*) s2);
-    if ((start > ft_strlen(s)))
+    if ((start > strlen(s)))
         return ((char*) s2);
-    while (len-- >= 1)
+    while (len-- >= 1 && s[i])
     {
-        ((char*) s2)[i] = ((char*) s) [start];
+        ((char*) s2)[i] = ((char*) s)[start];
         i++;
         start++;
     }
-    ((char*) s2)[i] = 0;
-    return ((char*) s2);    
+    ((char*) s2)[i++] = 0;
+    return ((char*) s2);
 }
-/* 
+
 int main(void)
 {
-    const char s[] = "Salut le rat";
-    unsigned int start = 20;
+    const char s[] = "i just want this part #############";
+    unsigned int start = 5;
 
-    size_t len = 16;
+    size_t len = 10;
     printf("RESULTAT : %s\n", ft_substr(s, start, len));
+<<<<<<< Updated upstream
 }
+=======
+}
+>>>>>>> Stashed changes
