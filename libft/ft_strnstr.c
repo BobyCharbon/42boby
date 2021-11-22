@@ -4,28 +4,26 @@
 #include "libft.h"
 
 
-char    *ft_strnstr(const char *str1, const char *str2, size_t n)
+char    *ft_strnstr(const char *haystack, const char *needle, size_t n)
 {
     size_t i;
     int j;
 
     i = 0;
-    j = 0;
 
-    if (!str2[i])
-        return ((char*) &str1[i]);
-    if (!str1[i])
+    if (!needle[i])
+        return ((char*) &haystack[i]);
+    if (!haystack[i])
         return (NULL);
-    while (str1[i] && n--)
+    while (haystack[i] && i < n)
     {
-        if (str1[i] == str2[j])
+        j = 0;
+        if (haystack[i] == needle[j])
         {
-            while((str1[i + j] == str2[j]) && (str2[j]))
+            while((haystack[i + j] == needle[j]) && (needle[j]))
                 j++;
-            if (!str2[j])
-                return ((char*) &str1[i]);
-            if (!str2[j] && n >= (i + j))
-                return ((char*) &str1[i]);
+            if (!needle[j] && n >= (i + j))
+                return ((char*) &haystack[i]);
         }
         i++;
     }
@@ -34,11 +32,11 @@ char    *ft_strnstr(const char *str1, const char *str2, size_t n)
 /* 
 int main(void)
 {
-    const char str1[] = "AAAAAAAAAAAAA";
-    const char str2[] = "\0";
+    const char haystack[] = "aaabcabcd";
+    const char needle[] = "c";
 
-    size_t n = sizeof(str1);
+    size_t n = -1;
 
-    printf("VRAI: %s\n", strnstr(str1, str1, n));
-    printf("Moi: %s\n", ft_strnstr(str1, str1, n));
+    printf("VRAI: %s\n", strnstr(haystack, needle, n));
+    printf("Moi: %s\n", ft_strnstr(haystack, needle, n));
 } */
