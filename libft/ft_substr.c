@@ -12,12 +12,12 @@ char *ft_substr(char const *s, unsigned int start, size_t len)
     int i;
 
     i = 0;
-    if (len > (size_t)(s))
-        s2 = malloc(len * sizeof(char) + 1);
-    else
-        s2 = malloc(sizeof(s));
+
     if (s == NULL)
         return (NULL);
+    if (ft_strlen((char*) (s + start)) < len)
+        len = strlen((char*) (s + start));
+    s2 = malloc(sizeof(char) * (len + 1));
     if (s2 == NULL)
         return ((char*) s2);
     if ((start > strlen(s)))
@@ -41,6 +41,4 @@ int main(void)
     printf("RESULTAT : %s\n", ft_substr(s, start, len));
 <<<<<<< Updated upstream
 }
-=======
-}
->>>>>>> Stashed changes
+ */
