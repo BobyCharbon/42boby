@@ -39,6 +39,4 @@ int main(void)
 
     size_t len = 10;
     printf("RESULTAT : %s\n", ft_substr(s, start, len));
-<<<<<<< Updated upstream
 }
- */
