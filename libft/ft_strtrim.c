@@ -5,27 +5,6 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
-/* static _Bool setchar_egal (char *s1, char *set, int i, int k)
-{
-    if (s1[i] == set[k])
-        return (true);
-    else
-        return (false);
-} */
-
-/* static _Bool char_diff (char *s1, char *set, int i, int k)
-{
-    k = 0;
-    while (set[k])
-    {
-        if (s1[i] != set[k])
-            k++;    
-        else
-            return (false);
-    }
-    return (true);
-} */
-
 static size_t string_end (char *s1, char *set, int i, size_t s1_size)
 {
     int k;
@@ -48,9 +27,9 @@ static size_t string_end (char *s1, char *set, int i, size_t s1_size)
 static size_t string_start (char *s1, char *set, int k) 
 {
     size_t i;
-    size_t x;
-    x = 0;
     i = 0;
+    if (!set[k])
+        return (0);
     while (s1[i])
     {
         while (s1[i] != set[k])
@@ -79,15 +58,16 @@ char *ft_strtrim(const char *s1, const char *set)
 
     if (s1 == NULL)
         return (NULL);
-    if (set == NULL)
+    if ((char*) set == NULL)
         return ((char*) s1);
     s1_size = strlen(s1);
     s1_size_start = string_start((char*) s1, (char*) set, k);
+    // if (s1_size_start)
+    //     return ((char*) s1);
     s1_size_end = string_end((char*) s1, (char*) set, s1_size_start, s1_size);
     tmp = malloc(s1_size_end - s1_size_start + 1 * sizeof(char));
     if (tmp == NULL)
         return (NULL);
-    
     while (s1_size_start < s1_size_end)
     {
         tmp[j] = ((char*) s1)[s1_size_start];
@@ -100,7 +80,7 @@ char *ft_strtrim(const char *s1, const char *set)
 /* 
 int main(void)
 {
-    const char s1[] = "   \t  \n\n \t\t  \n\n\nHello \t  Please\n Trim me !\t";
-    const char set[] = " \n\t";
+    const char s1[] = "xxxxxxxxx";
+    const char set[] = "";
     printf("RESULTAT: |%s|\n", ft_strtrim(s1, set));
 } */
