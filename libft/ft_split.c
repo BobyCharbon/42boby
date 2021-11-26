@@ -4,6 +4,14 @@
 #include <stdlib.h>
 //#include "libft.h"
 
+/* -------------------------------------------------------------------------- */
+/*            Fonction allouant avec Malloc et retourne un tableau            */
+/* ------------- de chaine de caractères obtenue en séparant 's' ------------ */
+/* ------------------------ à l'aide du caractère 'c' ----------------------- */
+/* -------------------------------------------------------------------------- */
+/* ------------------ le tableau doit se terminer par NULL ------------------ */
+/* -------------------------------------------------------------------------- */
+
 static size_t find_and_split(char *s, char c, size_t x)
 {
     while (s[x] || s[x] != c)
@@ -12,7 +20,7 @@ static size_t find_and_split(char *s, char c, size_t x)
         if (s[x] == c)
         {
             /* ------------------------------ pas sur du \0 ----------------------------- */
-            s[x] = 0;
+            // s[x] = 0;
             /* -------------------------------------------------------------------------- */
             return (x);
         }
