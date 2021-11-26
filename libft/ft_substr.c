@@ -30,7 +30,7 @@ char *ft_substr(char const *s, unsigned int start, size_t len)
     ((char*) s2)[i++] = 0;
     return ((char*) s2);
 }
-
+/* 
 int main(void)
 {
     const char s[] = "i just want this part #############";
@@ -38,4 +38,5 @@ int main(void)
 
     size_t len = 10;
     printf("RESULTAT : %s\n", ft_substr(s, start, len));
-}
+} */
+
