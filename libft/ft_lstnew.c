@@ -14,20 +14,34 @@
 /* ---------------------------- le nouvel élément --------------------------- */
 /* -------------------------------------------------------------------------- */
 
-t_list *ft_lstnew(void *content)
+ /* -------------------------------- *CONTENT: ------------------------------- */
+ /* ------------------- la donnée contenue dans le maillon ------------------- */
+ /* -------------------------------------------------------------------------- */
+
+ /* --------------------------------- *NEXT: --------------------------------- */
+ /* ---------------- l'adresse du maillon suivant de la liste ---------------- */
+ /* --------------------- NULL si le maillon est dernier --------------------- */
+ /* -------------------------------------------------------------------------- */
+typedef struct s_list
 {
-    t_list *liste = malloc(sizeof(*liste));
+    void            *content;
+    struct s_list   *next;
+}
+                    t_list;
+
+t_list 
+    *ft_lstnew(void *content)
+{
+    t_list *liste = (t_list*)malloc(sizeof(*liste));
 
     if (liste == NULL)
         return (NULL);
     liste->content = content;
     liste->next = NULL;
-    return(liste);
+    return (liste);
 }
 
-// int main(void)
-// {
-//     struct Livre livre1;
-//     livre1.annee = 1997;
-//     afficher_annee(livre1);
-// }
+int main(void)
+{
+    ft_lstnew("salut");
+}
