@@ -6,7 +6,7 @@
 /*   By: ludovictrombert <ludovictrombert@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 15:51:42 by ltromber          #+#    #+#             */
-/*   Updated: 2021/11/17 18:18:52 by ludovictrom      ###   ########.fr       */
+/*   Updated: 2021/11/30 18:49:18 by ludovictrom      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,12 @@
 #include <stdio.h>
 #include <unistd.h>
 
+typedef struct s_list
+{
+    void            *content;
+    struct s_list   *next;
+}
+                    t_list;
 int		ft_isalpha(int a);
 int		ft_isdigit(int c);
 int		ft_isalnum(int c);
