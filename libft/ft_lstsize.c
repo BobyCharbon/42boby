@@ -11,7 +11,7 @@
 /* ------------------ VALEUR DE RETOUR: taille de la liste ------------------ */
 /* -------------------------------------------------------------------------- */
 
-int ft_lstsize(t_list *lst);
+int ft_lstsize(t_list *lst)
 {
     size_t i;
 
@@ -26,5 +26,5 @@ int ft_lstsize(t_list *lst);
 
 // int main(void)
 // {
-//     t_list *lst
+//     t_list *lst;
 // }
