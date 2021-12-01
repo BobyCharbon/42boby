@@ -6,7 +6,7 @@
 /*   By: ludovictrombert <ludovictrombert@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 15:51:42 by ltromber          #+#    #+#             */
-/*   Updated: 2021/11/30 18:49:18 by ludovictrom      ###   ########.fr       */
+/*   Updated: 2021/12/01 11:03:44 by ludovictrom      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,13 @@ typedef struct s_list
     struct s_list   *next;
 }
                     t_list;
+
+typedef struct	s_split_next
+{
+	size_t start;
+	size_t length;
+}				t_split_next;
+
 int		ft_isalpha(int a);
 int		ft_isdigit(int c);
 int		ft_isalnum(int c);
