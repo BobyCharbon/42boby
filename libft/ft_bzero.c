@@ -6,7 +6,7 @@
 /*   By: ludovictrombert <ludovictrombert@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 12:06:34 by ltromber          #+#    #+#             */
-/*   Updated: 2021/11/15 18:42:51 by ludovictrom      ###   ########.fr       */
+/*   Updated: 2021/12/01 15:18:36 by ludovictrom      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,3 +54,10 @@ void	ft_bzero(void *str, size_t n)
 		i++;
 	}
 }
+
+// int main (void)
+// {
+// 	char str[] = "Salut";
+// 	size_t n = 2;
+// 	ft_bzero(str, n);
+// }
