@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <stdlib.h>
+#include <stdbool.h>
 #include "libft.h"
 
 /* -------------------------------------------------------------------------- */
@@ -17,94 +18,103 @@
 /* ----------------------- NULL si l'allocation échoue ---------------------- */
 /* -------------------------------------------------------------------------- */
 
-/* -------------------------------------------------------------------------- */
-/*                          alloue la fonction split                          */
-/* -------------------------------------------------------------------------- */
-static char **ft_malloc_split(char const *s, char c)
+static int	ft_wordlen(char const *s, char c)
 {
-    size_t i;
-    char **split;
-    size_t total;
+	int		i;
 
-    i = 0;
-    total = 0;
-    while (s[i])
-    {
-        if (s[i] == c)
-            total++;
-        i++;
-    }
-    split = (char**)malloc(sizeof(s) * (total + 2));
-    if (!split)
-        return (NULL);
-    return (split);
+	i = 0;
+	while (s[i] && s[i] != c)
+		i++;
+	return (i);
 }
 
-/* -------------------------------------------------------------------------- */
-/*                          free la mémoire de split                          */
-/* -------------------------------------------------------------------------- */
-void *ft_free_split(char **split, size_t elts)
+static int	ft_count_char(char const *s, char c)
 {
-    size_t i;
+	_Bool	is_in_word;
+	int		i;
+	int		count_char;
 
-    i = 0;
-    while (i < elts)
-    {
-        free(split[i]);
-        i++;
-    }
-    free(split);
-    return (NULL);
+	i = -1;
+	is_in_word = false;
+	count_char = 0;
+	if (c == '\0' && s[0] == '\0')
+		return (0);
+	else if (c == '\0')
+		return (1);
+	while (s[++i])
+	{
+		if (s[i] == c)
+			is_in_word = false;
+		else
+		{
+			if (!is_in_word)
+			{
+				is_in_word = true;
+				count_char++;
+			}
+		}
+	}
+	return (count_char);
 }
 
-
-static void *ft_split_range(char**split, const char *s, t_split_next *st, t_split_next *lt)
+static char	**ft_free(char **res, int words)
 {
-    split[lt->length] = ft_substr(s, st->start, st->length);
-    if (!split[lt->length])
-        return (ft_free_split(split, lt->length));
-    lt->length++;
-    return (split);
+	int		i;
+
+	i = 0;
+	if (!res)
+		return (NULL);
+	while (i < words)
+	{
+		if (res[i])
+			free(res[i++]);
+	}
+	free(res);
+	return (NULL);
 }
 
-static void *ft_split_by_char(char **split, const char *s, char c)
+static char	**ft_fill_res(char const *s, char c, char ***res, int count_char)
 {
-    size_t i;
-    t_split_next st;
-    t_split_next lt;
+	int		i;
+	int		j;
+	_Bool	is_in_word;
 
-    i = 0;
-    lt.length = 0;
-    lt.start = 0;
-    while(s[i])
-    {
-        if (s[i] == c)
-        {
-            st.start = lt.start;
-            st.length = (i - lt.start);
-            if (i > lt.start && !ft_split_range(split, s, &st, &lt))
-                return (NULL);
-            lt.start = i + 1;
-        }
-        i++;
-    }
-    st.start = lt.start;
-    st.length = (i - lt.start);
-    if (i > lt.start && i > 0 && !ft_split_range(split, s, &st, &lt))
-        return (NULL);
-    split[lt.length] = 0;
-    return (split);
+	i = -1;
+	j = 0;
+	is_in_word = false;
+	while (j < count_char)
+	{
+		if (s[++i] == c)
+		{
+			is_in_word = false;
+			continue ;
+		}
+		if (!is_in_word)
+		{
+			is_in_word = true;
+			(*res)[j] = malloc(sizeof(char) * (ft_wordlen(&s[i], c) + 1));
+			if (!(*res)[j])
+				return (ft_free(*res, (j - 1)));
+			strlcpy((*res)[j++], &s[i], (ft_wordlen(&s[i], c) + 1));
+		}
+	}
+	return (*res);
 }
 
-char **ft_split(const char *s, char c)
+char	**ft_split(char const *s, char c)
 {
-    char **split;
-    
-    if (!(split = ft_malloc_split(s, c)))
-        return (NULL);
-    if (!ft_split_by_char(split, s, c))
-        return (NULL);
-    return (split);
+	int		count_char;
+	char	**res;
+
+	if (!s)
+		return (NULL);
+	count_char = ft_count_char(s, c);
+	res = malloc(sizeof(char *) * (count_char + 1));
+	if (!res)
+		return (NULL);
+	res = ft_fill_res(s, c, &res, count_char);
+	res[count_char] = NULL;
+	return (res);
 }
 
 // int main(void)
