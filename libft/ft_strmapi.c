@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ludovictrombert <ludovictrombert@studen    +#+  +:+       +#+        */
+/*   By: ltromber <ltromber@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/02 14:44:11 by ludovictrom       #+#    #+#             */
-/*   Updated: 2021/12/02 15:29:13 by ludovictrom      ###   ########.fr       */
+/*   Updated: 2021/12/02 15:45:25 by ltromber         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,29 +27,26 @@
 /* ------------------ retourne NULL si l'allocation échoue ------------------ */
 /* -------------------------------------------------------------------------- */
 
-char *ft_strmapi(const char *s, char (*f) (unsigned int, char))
+char	*ft_strmapi(const char *s, char (*f) (unsigned int, char))
 {
-        int     i;
-        int     len_of_s;
-        char    *str;
+	char	*str;
+	int		i;
+	int		len_of_s;
 
-        if (!s) 
-                return (NULL);
-        i = 0;
-        len_of_s = strlen((char *)s);
-        str = malloc((len_of_s + 1) * sizeof(char));
-        if (!str)
-                return (NULL);
-        while (i < len_of_s)
-        {
-                str[i] = f(i, s[i]);
-                i++;
-        }
-        str[i] = '\0';
-        return (str);
-        
-        
-        
+	if (!s)
+		return (NULL);
+	i = 0;
+	len_of_s = strlen((char *)s);
+	str = malloc((len_of_s + 1) * sizeof(char));
+	if (!str)
+		return (NULL);
+	while (i < len_of_s)
+	{
+		str[i] = f(i, s[i]);
+		i++;
+	}
+	str[i] = '\0';
+	return (str);
 }
 
 // int main(void)
