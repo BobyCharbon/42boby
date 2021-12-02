@@ -6,14 +6,10 @@
 /*   By: ludovictrombert <ludovictrombert@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/02 10:54:37 by ludovictrom       #+#    #+#             */
-/*   Updated: 2021/12/02 10:54:38 by ludovictrom      ###   ########.fr       */
+/*   Updated: 2021/12/02 11:02:59 by ludovictrom      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdio.h>
-#include <unistd.h>
-#include <stdlib.h>
 #include "libft.h"
 
 char *ft_substr(char const *s, unsigned int start, size_t len)

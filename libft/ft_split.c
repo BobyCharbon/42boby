@@ -6,15 +6,10 @@
 /*   By: ludovictrombert <ludovictrombert@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/02 10:52:23 by ludovictrom       #+#    #+#             */
-/*   Updated: 2021/12/02 10:52:24 by ludovictrom      ###   ########.fr       */
+/*   Updated: 2021/12/02 11:01:36 by ludovictrom      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdio.h>
-#include <unistd.h>
-#include <stdlib.h>
-#include <stdbool.h>
 #include "libft.h"
 
 /* -------------------------------------------------------------------------- */

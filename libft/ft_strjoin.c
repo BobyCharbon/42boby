@@ -6,14 +6,10 @@
 /*   By: ludovictrombert <ludovictrombert@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/02 10:52:40 by ludovictrom       #+#    #+#             */
-/*   Updated: 2021/12/02 10:52:41 by ludovictrom      ###   ########.fr       */
+/*   Updated: 2021/12/02 11:01:52 by ludovictrom      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdio.h>
-#include <unistd.h>
-#include <stdlib.h>
 #include "libft.h"
 
 char *ft_strjoin(const char *s1, const char *s2)

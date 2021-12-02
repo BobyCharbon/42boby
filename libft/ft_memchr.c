@@ -6,13 +6,10 @@
 /*   By: ludovictrombert <ludovictrombert@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/02 10:51:23 by ludovictrom       #+#    #+#             */
-/*   Updated: 2021/12/02 10:51:24 by ludovictrom      ###   ########.fr       */
+/*   Updated: 2021/12/02 11:00:09 by ludovictrom      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <unistd.h>
-#include <stdio.h>
 #include "libft.h"
 
 void *ft_memchr(const void *str, int c, size_t n)

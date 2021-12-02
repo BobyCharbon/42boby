@@ -6,13 +6,10 @@
 /*   By: ludovictrombert <ludovictrombert@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/02 10:52:46 by ludovictrom       #+#    #+#             */
-/*   Updated: 2021/12/02 10:52:47 by ludovictrom      ###   ########.fr       */
+/*   Updated: 2021/12/02 11:01:57 by ludovictrom      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdio.h>
-#include <unistd.h>
 #include "libft.h"
 
 size_t ft_strlcat(char *dest, const char *src, size_t len)

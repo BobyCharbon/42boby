@@ -6,13 +6,10 @@
 /*   By: ludovictrombert <ludovictrombert@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/02 10:51:02 by ludovictrom       #+#    #+#             */
-/*   Updated: 2021/12/02 10:51:03 by ludovictrom      ###   ########.fr       */
+/*   Updated: 2021/12/02 10:59:50 by ludovictrom      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdio.h>
-#include <unistd.h>
 #include "libft.h"
 /* -------------------------------------------------------------------------- */
 /*                 Ajoute l'élément 'new' au début de la liste                */

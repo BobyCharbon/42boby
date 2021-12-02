@@ -6,13 +6,10 @@
 /*   By: ludovictrombert <ludovictrombert@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/02 10:54:19 by ludovictrom       #+#    #+#             */
-/*   Updated: 2021/12/02 10:54:20 by ludovictrom      ###   ########.fr       */
+/*   Updated: 2021/12/02 11:02:22 by ludovictrom      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdio.h>
-#include <unistd.h>
 #include "libft.h"
 
 

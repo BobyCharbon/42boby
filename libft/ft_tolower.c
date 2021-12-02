@@ -6,13 +6,10 @@
 /*   By: ludovictrombert <ludovictrombert@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 15:20:23 by ltromber          #+#    #+#             */
-/*   Updated: 2021/12/02 10:54:42 by ludovictrom      ###   ########.fr       */
+/*   Updated: 2021/12/02 11:03:04 by ludovictrom      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdio.h>
-#include <ctype.h>
 #include "libft.h"
 
 int	ft_tolower(int c)

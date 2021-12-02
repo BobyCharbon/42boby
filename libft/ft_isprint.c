@@ -6,11 +6,10 @@
 /*   By: ludovictrombert <ludovictrombert@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/29 19:34:50 by ltromber          #+#    #+#             */
-/*   Updated: 2021/11/10 14:27:54 by ludovictrom      ###   ########.fr       */
+/*   Updated: 2021/12/02 10:59:20 by ludovictrom      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include "libft.h"
 
 int	ft_isprint(int a)

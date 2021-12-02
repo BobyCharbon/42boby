@@ -6,15 +6,11 @@
 /*   By: ludovictrombert <ludovictrombert@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/02 10:52:34 by ludovictrom       #+#    #+#             */
-/*   Updated: 2021/12/02 10:52:35 by ludovictrom      ###   ########.fr       */
+/*   Updated: 2021/12/02 11:01:48 by ludovictrom      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdio.h>
-#include <unistd.h>
 #include "libft.h"
-#include <stdlib.h>
 
 char *ft_strdup(const char *str) 
 {

@@ -6,16 +6,11 @@
 /*   By: ludovictrombert <ludovictrombert@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/02 10:50:10 by ludovictrom       #+#    #+#             */
-/*   Updated: 2021/12/02 10:50:11 by ludovictrom      ###   ########.fr       */
+/*   Updated: 2021/12/02 10:58:20 by ludovictrom      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdio.h>
-#include <unistd.h>
 #include "libft.h"
-#include <stdlib.h>
-#include <stdbool.h>
 
 static _Bool ft_isspace (char c)
 {

@@ -1,9 +1,17 @@
-#include <string.h>
-#include <stdio.h>
-#include <unistd.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ludovictrombert <ludovictrombert@studen    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/12/02 11:02:45 by ludovictrom       #+#    #+#             */
+/*   Updated: 2021/12/02 11:02:53 by ludovictrom      ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
-#include <stdlib.h>
-#include <stdbool.h>
+
 
 static size_t string_end (char *s1, char *set, int i, size_t s1_size)
 {
