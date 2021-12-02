@@ -3,16 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ludovictrombert <ludovictrombert@studen    +#+  +:+       +#+        */
+/*   By: ltromber <ltromber@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 15:20:23 by ltromber          #+#    #+#             */
-/*   Updated: 2021/11/10 15:50:04 by ludovictrom      ###   ########.fr       */
+/*   Updated: 2021/12/02 11:35:34 by ltromber         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdio.h>
-#include <ctype.h>
 #include "libft.h"
 
 int	ft_tolower(int c)
@@ -21,6 +18,7 @@ int	ft_tolower(int c)
 		return (c + 32);
 	return (c);
 }
+
 /* 
 int	main(void)
 {

@@ -1,21 +1,133 @@
-/* {
-    "type": "shell",
-    "label": "build-writtenassignment",
-    "command": "/usr/bin/g++",
-    "args": [
-        "-g",
-        "${workspaceFolder}${fileBasename}",
-        "-o",
-        "${workspaceFolder}${fileBasenameNoExtension}"
-    ],
-    "options": {
-        "cwd": "/usr/bin"
-    },
-    "problemMatcher": [
-        "$gcc"
-    ],
-    "group": {
-        "kind": "build",
-        "isDefault": true 
-    }
-} */
+
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "Build Debug",
+            "command": "./a.out",
+            "args": [
+                "-std=c++11",
+                "-O2",
+                "-Wall",
+                "-g",
+                "${file}",
+                // "-o",
+                // "${file}"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "isDefault": true,
+                "kind": "build"
+            }
+        }
+    ]
+}
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+// {
+//     "version": "2.0.0",
+//     "tasks": [
+//         {
+//             "label": "Build Release",
+//             "type": "shell",
+//             "command": "gcc -g ${fileBasenameNoExtension}",
+//             "problemMatcher": [
+//                 "$gcc"
+//             ]
+//         },
+//         {
+//             "label": "Build Debug",
+//             "type": "shell",
+//             "command": "gcc -g ${file}",
+//             "problemMatcher": [
+//                 "$gcc"
+//             ]
+//         }
+//     ]
+// }
+
+
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+// {
+//     // See https://go.microsoft.com/fwlink/?LinkId=733558
+//     // for the documentation about the tasks.json format
+//     "version": "2.0.0",
+//     "tasks": [
+//       {
+//         "type": "shell",
+//         "label": "GCC ALL avec CMD+R",
+//         "command": "/usr/bin/clang++",
+//         "args": [
+//           "-std=c++17",
+//           "-stdlib=libc++",
+//           "-g",
+//           "${file}",
+//           "-o",
+//           "${fileDirname}/${fileBasenameNoExtension}"
+//         ],
+//         "options": {
+//           "cwd": "${workspaceFolder}"
+//         },
+//         "group": {
+//           "kind": "build",
+//           "isDefault": true
+//         }
+//       }
+//     ]
+//   }
+
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+
+// {
+//     // See https://go.microsoft.com/fwlink/?LinkId=733558
+//     // for the documentation about the tasks.json format
+//     "version": "2.0.0",
+//     "tasks": [
+//       {
+//         "type": "shell",
+//         "label": "(test)GCC avec CMD+R",
+//         "command": "/usr/bin/clang++",
+//         "args": [
+//           "-std=c++17",
+//           "-stdlib=libc++",
+//           "-g",
+//           "${file}",
+//           "-o",
+//           "${fileDirname}/${fileBasenameNoExtension}"
+//         ],
+//         "options": {
+//           "cwd": "${workspaceFolder}"
+//         },
+//         "problemMatcher": ["$gcc"],
+//         "group": {
+//           "kind": "build",
+//           "isDefault": true
+//         }
+//       }
+//     ]
+//   }
+
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+// {
+//     "version": "2.0.0",
+//     "tasks": [
+//       {
+//         "label": "build",
+//         "type": "shell",
+//         "command": "echo Hello"
+//       }
+//     ]
+//   }

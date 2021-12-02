@@ -1,38 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ltromber <ltromber@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ludovictrombert <ludovictrombert@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/29 19:47:31 by ltromber          #+#    #+#             */
-/*   Updated: 2021/12/02 11:27:45 by ltromber         ###   ########.fr       */
+/*   Created: 2021/12/02 10:52:00 by ludovictrom       #+#    #+#             */
+/*   Updated: 2021/12/02 12:24:34 by ludovictrom      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /* -------------------------------------------------------------------------- */
-/*                     VA CALCULER LE NOMBRE DE CARACTERES                    */
-/* ----------------------------- DANS LA STRING ----------------------------- */
+/*         Écrit La chaine de caractères ’s’ sur le file descriptor         */
+/* ----------------- donné, suivie d’un retour à la ligne ----------------- */
 /* -------------------------------------------------------------------------- */
 
-size_t	ft_strlen(const char *str)
+void	ft_putendl_fd(char *s, int fd)
 {
 	int	i;
 
 	i = 0;
-	while (str[i])
+	if (!fd || !s)
+		return ;
+	while (((char *)s)[i])
 	{
+		write(fd, s + i, 1);
 		i++;
 	}
-	return (i);
+	write (fd, "\n", 1);
 }
 
-// int	main(void)
-// {
-// 	char	chaine [] = "Salut";
-
-// 	ft_strlen(chaine);
-// 	printf(ft_strlen);
-// }
+/* 
+int main(void)
+{
+    char s[] = "Salut";
+    
+} */

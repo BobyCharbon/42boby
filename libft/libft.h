@@ -6,17 +6,33 @@
 /*   By: ludovictrombert <ludovictrombert@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 15:51:42 by ltromber          #+#    #+#             */
-/*   Updated: 2021/11/17 18:18:52 by ludovictrom      ###   ########.fr       */
+/*   Updated: 2021/12/02 13:12:52 by ltromber         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-#include <string.h>
-#include <stdlib.h>
-#include <stdio.h>
-#include <unistd.h>
+# include <string.h>
+# include <strings.h>
+# include <stdlib.h>
+# include <stdio.h>
+# include <unistd.h>
+# include <ctype.h>
+# include <stdio.h>
+# include <stdbool.h>
+
+typedef struct s_list
+{
+	struct s_list	*next;
+	void			*content;
+}				t_list;
+
+typedef struct s_split_next
+{
+	size_t	start;
+	size_t	length;
+}				t_split_next;
 
 int		ft_isalpha(int a);
 int		ft_isdigit(int c);
@@ -53,4 +69,7 @@ void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
+t_list	*ft_lstnew(void *content);
+int		ft_lstsize(t_list *lst);
+void	ft_lstadd_front(t_list **alst, t_list *new);
 #endif

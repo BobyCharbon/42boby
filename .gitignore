@@ -42,8 +42,14 @@
 *.su
 *.idb
 *.pdb
-.vscode*
-
+*.vscode
+*.sh
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
 # Kernel Module Compile Results
 *.mod*
 *.cmd

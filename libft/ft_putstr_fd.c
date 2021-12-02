@@ -1,18 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ltromber <ltromber@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ludovictrombert <ludovictrombert@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/29 17:18:54 by ltromber          #+#    #+#             */
-/*   Updated: 2021/12/02 11:12:37 by ltromber         ###   ########.fr       */
+/*   Created: 2021/12/02 10:52:17 by ludovictrom       #+#    #+#             */
+/*   Updated: 2021/12/02 12:25:10 by ludovictrom      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isdigit(int c)
+void	ft_putstr_fd(char *s, int fd)
 {
-	return (c >= '0' && c <= '9');
+	int	i;
+
+	i = 0;
+	if (!fd || !s)
+		return ;
+	while (((char *)s)[i])
+	{
+		write(fd, s + i, 1);
+		i++;
+	}
 }
+
+/* 
+int main(void)
+{
+    char s[] = "Salut";
+    // printf("RESULTAT: |%s|\n", ft_putstr_fd(s));
+    ft_putstr_fd(s);
+} */

@@ -1,38 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_lstsize.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ltromber <ltromber@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/29 19:47:31 by ltromber          #+#    #+#             */
-/*   Updated: 2021/12/02 11:27:45 by ltromber         ###   ########.fr       */
+/*   Created: 2021/12/02 10:51:19 by ludovictrom       #+#    #+#             */
+/*   Updated: 2021/12/02 11:15:45 by ltromber         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /* -------------------------------------------------------------------------- */
-/*                     VA CALCULER LE NOMBRE DE CARACTERES                    */
-/* ----------------------------- DANS LA STRING ----------------------------- */
+/*                   Compte le nombre d'éléments de la liste                  */
+/* -------------------------------------------------------------------------- */
+/* ------------------------ lst = Taille de la liste ------------------------ */
+/* ------------------ VALEUR DE RETOUR: taille de la liste ------------------ */
 /* -------------------------------------------------------------------------- */
 
-size_t	ft_strlen(const char *str)
+int	ft_lstsize(t_list *lst)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
-	while (str[i])
+	while (lst)
 	{
+		lst = lst->next;
 		i++;
 	}
 	return (i);
 }
 
-// int	main(void)
+// int main(void)
 // {
-// 	char	chaine [] = "Salut";
-
-// 	ft_strlen(chaine);
-// 	printf(ft_strlen);
+//     t_list *lst;
 // }
