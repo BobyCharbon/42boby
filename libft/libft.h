@@ -6,7 +6,7 @@
 /*   By: ltromber <ltromber@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 15:51:42 by ltromber          #+#    #+#             */
-/*   Updated: 2021/12/02 12:34:10 by ltromber         ###   ########.fr       */
+/*   Updated: 2021/12/02 12:38:44 by ltromber         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,9 +26,8 @@ typedef struct s_list
 {
 	struct s_list	*next;
 	void			*content;
-}
+}t_list;
 
-t_list;
 typedef struct s_split_next
 {
 	size_t	start;
