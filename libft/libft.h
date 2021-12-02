@@ -6,7 +6,7 @@
 /*   By: ltromber <ltromber@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 15:51:42 by ltromber          #+#    #+#             */
-/*   Updated: 2021/12/02 12:38:44 by ltromber         ###   ########.fr       */
+/*   Updated: 2021/12/02 13:12:52 by ltromber         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,4 +69,7 @@ void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
+t_list	*ft_lstnew(void *content);
+int		ft_lstsize(t_list *lst);
+void	ft_lstadd_front(t_list **alst, t_list *new);
 #endif
