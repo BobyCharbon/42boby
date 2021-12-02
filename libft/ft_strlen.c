@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ludovictrombert <ludovictrombert@studen    +#+  +:+       +#+        */
+/*   By: ltromber <ltromber@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/29 19:47:31 by ltromber          #+#    #+#             */
-/*   Updated: 2021/12/02 11:02:04 by ludovictrom      ###   ########.fr       */
+/*   Updated: 2021/12/02 11:27:45 by ltromber         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@
 /*                     VA CALCULER LE NOMBRE DE CARACTERES                    */
 /* ----------------------------- DANS LA STRING ----------------------------- */
 /* -------------------------------------------------------------------------- */
-
 
 size_t	ft_strlen(const char *str)
 {

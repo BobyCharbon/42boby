@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ludovictrombert <ludovictrombert@studen    +#+  +:+       +#+        */
+/*   By: ltromber <ltromber@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/02 10:52:23 by ludovictrom       #+#    #+#             */
-/*   Updated: 2021/12/02 11:01:36 by ludovictrom      ###   ########.fr       */
+/*   Updated: 2021/12/02 11:24:20 by ltromber         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

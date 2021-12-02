@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ludovictrombert <ludovictrombert@studen    +#+  +:+       +#+        */
+/*   By: ltromber <ltromber@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/29 14:57:31 by ltromber          #+#    #+#             */
-/*   Updated: 2021/12/02 10:58:57 by ludovictrom      ###   ########.fr       */
+/*   Updated: 2021/12/02 11:12:34 by ltromber         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
