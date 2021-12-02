@@ -14,7 +14,7 @@ char *ft_substr(char const *s, unsigned int start, size_t len)
 
     if (s == NULL)
         return (NULL);
-    if (ft_strlen((char*) (s + start)) < len)
+    if (strlen((char*) s) + start < len)
         len = strlen((char*) (s + start));
     s2 = malloc(sizeof(char) * (len + 1));
     if (s2 == NULL)
@@ -30,13 +30,13 @@ char *ft_substr(char const *s, unsigned int start, size_t len)
     ((char*) s2)[i++] = 0;
     return ((char*) s2);
 }
-/* 
+
 int main(void)
 {
-    const char s[] = "i just want this part #############";
-    unsigned int start = 5;
+    const char s[] = "tripouille";
+    unsigned int start = 100;
 
-    size_t len = 10;
-    printf("RESULTAT : %s\n", ft_substr(s, start, len));
-} */
+    size_t len = 1;
+    printf("RESULTAT:|%s|\n", ft_substr(s, start, len));
+}
 
