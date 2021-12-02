@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ludovictrombert <ludovictrombert@studen    +#+  +:+       +#+        */
+/*   By: ltromber <ltromber@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 15:37:40 by ltromber          #+#    #+#             */
-/*   Updated: 2021/12/02 11:01:42 by ludovictrom      ###   ########.fr       */
+/*   Updated: 2021/12/02 11:25:39 by ltromber         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,17 +17,15 @@ char	*ft_strchr(const char	*str, int c)
 	int	i;
 
 	i = 0;
-
-	
 	while (str[i])
 	{
 		if (str[i] == (char)c)
-			return ((char*)str + i);
+			return ((char *)str + i);
 		i++;
 	}
 	if (c == '\0')
 	{
-		return ((char*) str + i);
+		return ((char *) str + i);
 	}
 	return (NULL);
 }

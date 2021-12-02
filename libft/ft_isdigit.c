@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ludovictrombert <ludovictrombert@studen    +#+  +:+       +#+        */
+/*   By: ltromber <ltromber@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/29 17:18:54 by ltromber          #+#    #+#             */
-/*   Updated: 2021/12/02 10:59:15 by ludovictrom      ###   ########.fr       */
+/*   Updated: 2021/12/02 11:12:37 by ltromber         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

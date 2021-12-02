@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ludovictrombert <ludovictrombert@studen    +#+  +:+       +#+        */
+/*   By: ltromber <ltromber@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/02 10:59:25 by ludovictrom       #+#    #+#             */
-/*   Updated: 2021/12/02 10:59:42 by ludovictrom      ###   ########.fr       */
+/*   Updated: 2021/12/02 11:13:42 by ltromber         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,52 +20,52 @@
 /* -------------- Les nombres négatifs doivent être gérés. -------------- */
 /* -------------------------------------------------------------------------- */
 
-static int ft_nbrlen (int n)
+static int	ft_nbrlen(int n)
 {
-    int i;
-    i = 0;
+	int	i;
 
-    if (n == 0)
-        return (1);
-    if (n < 0)
-    {
-        n = n / -10;
-        i = 2;
-    }
-    while (n > 0)
-    {
-        n = n / 10;
-        i++;
-    }
-    return (i);
+	i = 0;
+	if (n == 0)
+		return (1);
+	if (n < 0)
+	{
+		n = n / -10;
+		i = 2;
+	}
+	while (n > 0)
+	{
+		n = n / 10;
+		i++;
+	}
+	return (i);
 }
 
-char *ft_itoa(int n)
+char	*ft_itoa(int n)
 {
-    char *s;
-    int number_of_char;
-    int i;
+	char	*s;
+	int		number_of_char;
+	int		i;
 
-    number_of_char = ft_nbrlen(n);
-    s = malloc(sizeof(char) * (number_of_char + 1));
-    if (s == NULL)
-        return (NULL);
-    i = number_of_char - 1;
-    s[number_of_char] = '\0';
-    if (n == 0)
-        s[i] = n % 10 + 48;
-    if (n < 0)
-    {
-        s[0] = '-';
-        s[i--] = -(n % 10) + 48;
-        n = n / -10;
-    }
-    while (n > 0)
-    {
-        s[i--] = n % 10 + 48;
-        n = n / 10;
-    }
-    return (s);
+	number_of_char = ft_nbrlen(n);
+	s = malloc(sizeof(char) * (number_of_char + 1));
+	if (s == NULL)
+		return (NULL);
+	i = number_of_char - 1;
+	s[number_of_char] = '\0';
+	if (n == 0)
+		s[i] = n % 10 + 48;
+	if (n < 0)
+	{
+		s[0] = '-';
+		s[i--] = -(n % 10) + 48;
+		n = n / -10;
+	}
+	while (n > 0)
+	{
+		s[i--] = n % 10 + 48;
+		n = n / 10;
+	}
+	return (s);
 }
 /* 
 int main(void)

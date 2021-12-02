@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ludovictrombert <ludovictrombert@studen    +#+  +:+       +#+        */
+/*   By: ltromber <ltromber@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/02 10:51:02 by ludovictrom       #+#    #+#             */
-/*   Updated: 2021/12/02 10:59:50 by ludovictrom      ###   ########.fr       */
+/*   Updated: 2021/12/02 11:14:02 by ltromber         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,14 +19,14 @@
 /* -------------------------- VALEUR DE RETOUR : / -------------------------- */
 /* -------------------------------------------------------------------------- */
 
-void ft_lstadd_front(t_list **alst, t_list *new)
+void	ft_lstadd_front(t_list **alst, t_list *new)
 {
-    if (alst)
-    {
-        if (*alst)
-            new->next = *alst;
-        *alst = new;
-    }
+	if (alst)
+	{
+		if (*alst)
+			new->next = *alst;
+		*alst = new;
+	}
 }
 
 // int main(void)
