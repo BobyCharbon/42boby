@@ -6,16 +6,18 @@
 /*   By: ltromber <ltromber@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/02 11:02:45 by ludovictrom       #+#    #+#             */
-/*   Updated: 2021/12/02 11:33:02 by ltromber         ###   ########.fr       */
+/*   Updated: 2021/12/02 12:29:01 by ltromber         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static	size_t	string_end(char *s1, char *set, int i, size_t s1_size)
+static	size_t	string_end(char *s1, char *set, int i)
 {
-	int	k;
+	size_t	s1_size;
+	int		k;
 
+	s1_size = strlen(s1);
 	k = 0;
 	while (s1[i])
 	{
@@ -57,7 +59,6 @@ char	*ft_strtrim(const char *s1, const char *set)
 	char	*tmp;
 	size_t	j;
 	size_t	k;
-	int		s1_size;
 	int		s1_size_end;
 	int		s1_size_start;
 
@@ -67,9 +68,8 @@ char	*ft_strtrim(const char *s1, const char *set)
 		return (NULL);
 	if ((char *) set == NULL)
 		return ((char *) s1);
-	s1_size = strlen(s1);
 	s1_size_start = string_start((char *) s1, (char *) set, k);
-	s1_size_end = string_end((char *) s1, (char *) set, s1_size_start, s1_size);
+	s1_size_end = string_end((char *) s1, (char *) set, s1_size_start);
 	tmp = malloc(s1_size_end - s1_size_start + 1 * sizeof(char));
 	if (tmp == NULL)
 		return (NULL);
