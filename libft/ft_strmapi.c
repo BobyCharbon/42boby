@@ -1,8 +1,16 @@
-#include <string.h>
-#include <stdio.h>
-#include <unistd.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ludovictrombert <ludovictrombert@studen    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/12/02 14:44:11 by ludovictrom       #+#    #+#             */
+/*   Updated: 2021/12/02 14:49:47 by ludovictrom      ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-//#include "libft.h"
+#include "libft.h"
 
 /* -------------------------------------------------------------------------- */
 /*         Applique la fonction 'f' à chaque caractère de la chaine de        */
@@ -19,11 +27,12 @@
 /* ------------------ retourne NULL si l'allocation échoue ------------------ */
 /* -------------------------------------------------------------------------- */
 
-
-
 char *ft_strmapi(const char *s, char (*f) (unsigned int, char))
 {
+        int i;
 
+        i = 0;
+        (char *) s = malloc(strlen((char *) s) * sizeof(char));
 }
 
 int main(void)
