@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ltromber <ltromber@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ludovictrombert <ludovictrombert@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/02 11:02:45 by ludovictrom       #+#    #+#             */
-/*   Updated: 2021/12/02 12:29:01 by ltromber         ###   ########.fr       */
+/*   Updated: 2021/12/02 12:30:49 by ludovictrom      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ static	size_t	string_end(char *s1, char *set, int i)
 	size_t	s1_size;
 	int		k;
 
-	s1_size = strlen(s1);
+	s1_size = ft_strlen(s1);
 	k = 0;
 	while (s1[i])
 	{
