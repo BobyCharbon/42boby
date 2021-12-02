@@ -6,7 +6,7 @@
 /*   By: ltromber <ltromber@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/02 10:52:53 by ludovictrom       #+#    #+#             */
-/*   Updated: 2021/12/02 11:27:41 by ltromber         ###   ########.fr       */
+/*   Updated: 2021/12/02 15:48:41 by ltromber         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t dest_size)
 	int		src_size;
 
 	i = 0;
-	src_size = strlen((char *) src);
+	src_size = ft_strlen((char *) src);
 	if (dest_size <= 0)
 		return (src_size);
 	while (i < (dest_size - 1) && i < (size_t) src_size)

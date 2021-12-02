@@ -6,7 +6,7 @@
 /*   By: ltromber <ltromber@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/02 14:44:11 by ludovictrom       #+#    #+#             */
-/*   Updated: 2021/12/02 15:45:25 by ltromber         ###   ########.fr       */
+/*   Updated: 2021/12/02 15:48:50 by ltromber         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ char	*ft_strmapi(const char *s, char (*f) (unsigned int, char))
 	if (!s)
 		return (NULL);
 	i = 0;
-	len_of_s = strlen((char *)s);
+	len_of_s = ft_strlen((char *)s);
 	str = malloc((len_of_s + 1) * sizeof(char));
 	if (!str)
 		return (NULL);

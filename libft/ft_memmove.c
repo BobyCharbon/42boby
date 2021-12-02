@@ -6,7 +6,7 @@
 /*   By: ltromber <ltromber@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/02 10:51:43 by ludovictrom       #+#    #+#             */
-/*   Updated: 2021/12/02 11:21:58 by ltromber         ###   ########.fr       */
+/*   Updated: 2021/12/02 15:47:22 by ltromber         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	if (dest == NULL && src == NULL)
 		return (dest);
 	if (src > dest)
-		return (memcpy(dest, src, n));
+		return (ft_memcpy(dest, src, n));
 	i = (int) n - 1;
 	while (i >= 0)
 	{

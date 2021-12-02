@@ -6,7 +6,7 @@
 /*   By: ltromber <ltromber@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/02 10:52:23 by ludovictrom       #+#    #+#             */
-/*   Updated: 2021/12/02 11:24:20 by ltromber         ###   ########.fr       */
+/*   Updated: 2021/12/02 15:48:21 by ltromber         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -102,7 +102,7 @@ static char	**ft_fill_res(char const *s, char c, char ***res, int count_char)
 			(*res)[j] = malloc(sizeof(char) * (ft_wordlen(&s[i], c) + 1));
 			if (!(*res)[j])
 				return (ft_free(*res, (j - 1)));
-			strlcpy((*res)[j++], &s[i], (ft_wordlen(&s[i], c) + 1));
+			ft_strlcpy((*res)[j++], &s[i], (ft_wordlen(&s[i], c) + 1));
 		}
 	}
 	return (*res);
