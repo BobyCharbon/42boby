@@ -6,7 +6,7 @@
 /*   By: ludovictrombert <ludovictrombert@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/30 14:52:24 by ludovictrom       #+#    #+#             */
-/*   Updated: 2021/11/15 19:00:27 by ludovictrom      ###   ########.fr       */
+/*   Updated: 2021/12/02 10:51:52 by ludovictrom      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@ void *ft_memset(void *s, int c, size_t  n)
     return ((char*)str);
 
 }
+
 /* 
 int main(void)
 {

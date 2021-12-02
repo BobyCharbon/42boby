@@ -62,8 +62,6 @@ char *ft_strtrim(const char *s1, const char *set)
         return ((char*) s1);
     s1_size = strlen(s1);
     s1_size_start = string_start((char*) s1, (char*) set, k);
-    // if (s1_size_start)
-    //     return ((char*) s1);
     s1_size_end = string_end((char*) s1, (char*) set, s1_size_start, s1_size);
     tmp = malloc(s1_size_end - s1_size_start + 1 * sizeof(char));
     if (tmp == NULL)
@@ -77,6 +75,7 @@ char *ft_strtrim(const char *s1, const char *set)
     tmp[j] = 0;
     return ((char*) tmp);
 }
+
 /* 
 int main(void)
 {

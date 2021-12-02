@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ludovictrombert <ludovictrombert@studen    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/12/02 10:52:00 by ludovictrom       #+#    #+#             */
+/*   Updated: 2021/12/02 10:52:01 by ludovictrom      ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <string.h>
 #include <stdio.h>
 #include <unistd.h>
@@ -23,6 +35,7 @@ void ft_putendl_fd (char *s, int fd)
     }
     write (fd, "\n", 1);
 }
+
 /* 
 int main(void)
 {

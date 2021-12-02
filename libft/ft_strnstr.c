@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ludovictrombert <ludovictrombert@studen    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/12/02 10:54:19 by ludovictrom       #+#    #+#             */
+/*   Updated: 2021/12/02 10:54:20 by ludovictrom      ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <string.h>
 #include <stdio.h>
 #include <unistd.h>
@@ -29,6 +41,7 @@ char    *ft_strnstr(const char *haystack, const char *needle, size_t n)
     }
     return (NULL);
 }
+
 /* 
 int main(void)
 {

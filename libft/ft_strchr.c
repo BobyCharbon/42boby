@@ -6,7 +6,7 @@
 /*   By: ludovictrombert <ludovictrombert@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 15:37:40 by ltromber          #+#    #+#             */
-/*   Updated: 2021/11/15 19:16:23 by ludovictrom      ###   ########.fr       */
+/*   Updated: 2021/12/02 10:52:30 by ludovictrom      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,7 @@ char	*ft_strchr(const char	*str, int c)
 	}
 	return (NULL);
 }
+
 /* 
 int	main(void)
 {

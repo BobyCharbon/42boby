@@ -6,7 +6,7 @@
 /*   By: ludovictrombert <ludovictrombert@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 12:06:34 by ltromber          #+#    #+#             */
-/*   Updated: 2021/12/01 15:18:36 by ludovictrom      ###   ########.fr       */
+/*   Updated: 2021/12/02 10:50:20 by ludovictrom      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,22 +15,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include "libft.h"
-/* 
-void	ft_bzero(void *str, size_t n);
 
-int main(void)
-{
-	char s[] = "Salut mec comment tu vas ouais ca va";
-
-	size_t n;
-	n = 0;
-	printf("AVANT : %s\n", s);
-	bzero(s, n);
-	printf("(vrai)après : >%s< RIEN\n", s); 
-	ft_bzero(s, n);
-	printf("(moi)après : >%s< RIEN\n", s);
-}
- */
 void	ft_bzero(void *str, size_t n)
 {
 	size_t i;

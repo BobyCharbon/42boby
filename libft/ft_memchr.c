@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ludovictrombert <ludovictrombert@studen    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/12/02 10:51:23 by ludovictrom       #+#    #+#             */
+/*   Updated: 2021/12/02 10:51:24 by ludovictrom      ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <string.h>
 #include <unistd.h>
 #include <stdio.h>
@@ -17,6 +29,7 @@ void *ft_memchr(const void *str, int c, size_t n)
     }
     return (NULL);
 }
+
 /* 
 int main(void)
 {

@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_lstnew.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ludovictrombert <ludovictrombert@studen    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/12/02 10:51:11 by ludovictrom       #+#    #+#             */
+/*   Updated: 2021/12/02 10:51:15 by ludovictrom      ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <string.h>
 #include <stdio.h>
 #include <unistd.h>
@@ -34,8 +46,8 @@ t_list
     liste->next = NULL;
     return (liste);
 }
-
+/* 
 int main(void)
 {
     ft_lstnew("salut");
-}
+} */

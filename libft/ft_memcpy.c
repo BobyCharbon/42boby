@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ludovictrombert <ludovictrombert@studen    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/12/02 10:51:36 by ludovictrom       #+#    #+#             */
+/*   Updated: 2021/12/02 10:51:37 by ludovictrom      ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <string.h>
 #include <stdio.h>
 #include <unistd.h>
@@ -18,6 +30,7 @@ void *ft_memcpy(void *dest, const void *src, size_t n)
     }
     return (dest);
 }
+
 /* 
 int main(void)
 {

@@ -3,7 +3,7 @@
 #include <unistd.h>
 #include <stdbool.h>
 #include <stdlib.h>
-//#include "libft.h"
+#include "libft.h"
 
 /* -------------------------------------------------------------------------- */
 /*              Alloue (avec malloc(3)) et retourne une chaine de             */

@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ludovictrombert <ludovictrombert@studen    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/12/02 10:54:13 by ludovictrom       #+#    #+#             */
+/*   Updated: 2021/12/02 10:54:14 by ludovictrom      ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <string.h>
 #include <unistd.h>
 #include <stdio.h>
@@ -16,6 +28,7 @@ int ft_strncmp(const char *str1, const char *str2, size_t n)
 
     return (0);
 }
+
 /* 
 int main(void)
 {

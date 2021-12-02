@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ludovictrombert <ludovictrombert@studen    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/12/02 10:52:46 by ludovictrom       #+#    #+#             */
+/*   Updated: 2021/12/02 10:52:47 by ludovictrom      ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <string.h>
 #include <stdio.h>
 #include <unistd.h>
@@ -21,6 +33,7 @@ size_t ft_strlcat(char *dest, const char *src, size_t len)
     dest[j] = '\0';
     return (src_len + dest_len);
 }
+
 /* 
 int main(void)
 {

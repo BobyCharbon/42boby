@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ludovictrombert <ludovictrombert@studen    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/12/02 10:54:37 by ludovictrom       #+#    #+#             */
+/*   Updated: 2021/12/02 10:54:38 by ludovictrom      ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <string.h>
 #include <stdio.h>
 #include <unistd.h>
@@ -30,6 +42,7 @@ char *ft_substr(char const *s, unsigned int start, size_t len)
     ((char*) s2)[i++] = 0;
     return ((char*) s2);
 }
+
 /* 
 int main(void)
 {
