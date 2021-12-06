@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ltromber <ltromber@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ludovictrombert <ludovictrombert@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/02 10:59:25 by ludovictrom       #+#    #+#             */
-/*   Updated: 2021/12/02 11:13:42 by ltromber         ###   ########.fr       */
+/*   Updated: 2021/12/06 23:35:02 by ludovictrom      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,11 @@
 /*              Alloue (avec malloc(3)) et retourne une chaine de             */
 /* --------- caractères représentant l’integer reçu en argument. --------- */
 /* -------------------------------------------------------------------------- */
-/* ---------------------- NULL si l’allocation échoue. --------------------- */
 /* -------------- Les nombres négatifs doivent être gérés. -------------- */
+/* -------------------------------------------------------------------------- */
+/* ---------------------------- VALEUR DE RETOUR: --------------------------- */
+/* --------------- la chaine de caractères représentant l'int --------------- */
+/* ---------------------- NULL si l’allocation échoue. --------------------- */
 /* -------------------------------------------------------------------------- */
 
 static int	ft_nbrlen(int n)

@@ -3,12 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ltromber <ltromber@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ludovictrombert <ludovictrombert@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/02 10:50:10 by ludovictrom       #+#    #+#             */
-/*   Updated: 2021/12/02 11:10:43 by ltromber         ###   ########.fr       */
+/*   Updated: 2021/12/06 23:24:29 by ludovictrom      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/* -------------------------------------------------------------------------- */
+/*       La fonction atoi() convertit le début de la chaîne pointée par       */
+/* ----------------------- STR en entier de type int . ---------------------- */
+/* -------------------------------------------------------------------------- */
+/* --------------- VALEUR DE RETOUR: résultat de la conversion -------------- */
 
 #include "libft.h"
 
