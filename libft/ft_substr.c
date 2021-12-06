@@ -3,12 +3,27 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ltromber <ltromber@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ludovictrombert <ludovictrombert@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/02 10:54:37 by ludovictrom       #+#    #+#             */
-/*   Updated: 2021/12/06 15:19:53 by ltromber         ###   ########.fr       */
+/*   Updated: 2021/12/07 00:14:33 by ludovictrom      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/* -------------------------------------------------------------------------- */
+/*                Alloue avec malloc et retourne une chaine de                */
+/* -------------------- caractères issue de la chaine S. ------------------- */
+/* ----------- Cette nouvelle chaine commence à l’index START et ----------- */
+/* ----------------------- a pour taille maximale LEN ----------------------- */
+/* -------------------------------------------------------------------------- */
+/* ---------- S = la chaine de laquelle extraire la nouvelle chaine --------- */
+/* ----- START = l'index de début de la nouvelle chaine dans la chaine S ---- */
+/* ------------- LEN = la taille maximale de la nouvelle chaine ------------- */
+/* -------------------------------------------------------------------------- */
+/* ---------------------------- VALEUR DE RETOUR: --------------------------- */
+/* ---------------------- nouvelle chaine de caractère --------------------- */
+/* ----------------------- NULL si l'allocation échoue ---------------------- */
+/* -------------------------------------------------------------------------- */
 
 #include "libft.h"
 

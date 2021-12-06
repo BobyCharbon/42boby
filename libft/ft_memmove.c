@@ -3,12 +3,24 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ltromber <ltromber@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ludovictrombert <ludovictrombert@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/02 10:51:43 by ludovictrom       #+#    #+#             */
-/*   Updated: 2021/12/02 15:47:22 by ltromber         ###   ########.fr       */
+/*   Updated: 2021/12/06 23:40:17 by ludovictrom      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/* -------------------------------------------------------------------------- */
+/*    copie n octets depuis la zone mémoire src vers la zone mémoire dest.    */
+/* ---- Les deux zones peuvent se chevaucher : la copie se passe comme si --- */
+/* ---- les octets de src étaient d'abord copiés dans une zone temporaire --- */
+/* --- qui ne chevauche ni src ni dest, et les octets sont ensuite copiés --- */
+/* -------------------- de la zone temporaire vers dest. -------------------- */
+/* -------------------------------------------------------------------------- */
+/* ---------------------------- VALEUR DE RETOUR: --------------------------- */
+/* ---------------------------- pointeur sur DEST --------------------------- */
+/* -------------------------------------------------------------------------- */
+
 
 #include "libft.h"
 
