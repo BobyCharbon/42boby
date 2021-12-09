@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ludovictrombert <ludovictrombert@studen    +#+  +:+       +#+        */
+/*   By: ltromber <ltromber@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/02 10:51:23 by ludovictrom       #+#    #+#             */
-/*   Updated: 2021/12/06 23:37:24 by ludovictrom      ###   ########.fr       */
+/*   Updated: 2021/12/09 15:41:00 by ltromber         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
 /* ------------------- pointeur sur l'octet correspondant ------------------- */
 /* ----- NULL si le caractère n'est pas présent dans la zone de mémoire ----- */
 /* -------------------------------------------------------------------------- */
- 
+
 #include "libft.h"
 
 void	*ft_memchr(const void *str, int c, size_t n)

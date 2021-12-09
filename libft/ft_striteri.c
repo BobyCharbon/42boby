@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ludovictrombert <ludovictrombert@studen    +#+  +:+       +#+        */
+/*   By: ltromber <ltromber@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/07 00:19:56 by ludovictrom       #+#    #+#             */
-/*   Updated: 2021/12/07 15:13:34 by ludovictrom      ###   ########.fr       */
+/*   Updated: 2021/12/09 15:41:51 by ltromber         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@
 /* --------------------------- VALEUR DE RETOUR: / -------------------------- */
 /* -------------------------------------------------------------------------- */
 
-void ft_striteri(char *s, void (*f)(unsigned int, char *))
+void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
 	int	i;
 	int	strlen;

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ludovictrombert <ludovictrombert@studen    +#+  +:+       +#+        */
+/*   By: ltromber <ltromber@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/02 10:54:37 by ludovictrom       #+#    #+#             */
-/*   Updated: 2021/12/07 14:09:06 by ludovictrom      ###   ########.fr       */
+/*   Updated: 2021/12/09 15:34:31 by ltromber         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

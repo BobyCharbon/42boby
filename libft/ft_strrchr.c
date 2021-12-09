@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ludovictrombert <ludovictrombert@studen    +#+  +:+       +#+        */
+/*   By: ltromber <ltromber@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 18:28:19 by ltromber          #+#    #+#             */
-/*   Updated: 2021/12/06 23:50:11 by ludovictrom      ###   ########.fr       */
+/*   Updated: 2021/12/09 15:38:23 by ltromber         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@
 /* ---------- renvoie un pointeur sur le caractère correspondant ou --------- */
 /* ---------------- NULL si le caractère n'a pas été trouvé. ---------------- */
 /* -------------------------------------------------------------------------- */
-
 
 #include "libft.h"
 
