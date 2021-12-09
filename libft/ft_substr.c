@@ -6,9 +6,24 @@
 /*   By: ltromber <ltromber@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/02 10:54:37 by ludovictrom       #+#    #+#             */
-/*   Updated: 2021/12/02 15:49:29 by ltromber         ###   ########.fr       */
+/*   Updated: 2021/12/09 15:34:31 by ltromber         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/* -------------------------------------------------------------------------- */
+/*                Alloue avec malloc et retourne une chaine de                */
+/* -------------------- caractères issue de la chaine S. ------------------- */
+/* ----------- Cette nouvelle chaine commence à l’index START et ----------- */
+/* ----------------------- a pour taille maximale LEN ----------------------- */
+/* -------------------------------------------------------------------------- */
+/* ---------- S = la chaine de laquelle extraire la nouvelle chaine --------- */
+/* ----- START = l'index de début de la nouvelle chaine dans la chaine S ---- */
+/* ------------- LEN = la taille maximale de la nouvelle chaine ------------- */
+/* -------------------------------------------------------------------------- */
+/* ---------------------------- VALEUR DE RETOUR: --------------------------- */
+/* ---------------------- nouvelle chaine de caractère --------------------- */
+/* ----------------------- NULL si l'allocation échoue ---------------------- */
+/* -------------------------------------------------------------------------- */
 
 #include "libft.h"
 
@@ -20,6 +35,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	i = 0;
 	if (s == NULL)
 		return (NULL);
+	if (start > ft_strlen(s))
+		return (ft_strdup(""));
 	if (ft_strlen((char *)(s + start)) < len)
 		len = ft_strlen((char *)(s + start));
 	s2 = malloc(sizeof(char) * (len + 1));
@@ -37,12 +54,11 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	return ((char *) s2);
 }
 
-/* 
-int main(void)
-{
-    const char s[] = "i just want this part #############";
-    unsigned int start = 5;
+// int main(void)
+// {
+//     const char s[] = "i just want this part #############";
+//     unsigned int start = 42;
 
-    size_t len = 10;
-    printf("RESULTAT : %s\n", ft_substr(s, start, len));
-} */
+//     size_t len = 42000000;
+//     printf("RESULTAT:|%s|\n", ft_substr(s, start, len));
+// }

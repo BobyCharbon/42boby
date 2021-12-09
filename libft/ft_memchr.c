@@ -6,9 +6,20 @@
 /*   By: ltromber <ltromber@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/02 10:51:23 by ludovictrom       #+#    #+#             */
-/*   Updated: 2021/12/02 11:16:28 by ltromber         ###   ########.fr       */
+/*   Updated: 2021/12/09 15:41:00 by ltromber         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/* -------------------------------------------------------------------------- */
+/*        examine les n premiers octets de la zone mémoire pointée par        */
+/* -------------------------------------------------------------------------- */
+/* -- STR à la recherche du caractère c. Le premier octet correspondant à c - */
+/* --------- (interprété comme un unsigned char) arrête l'opération. -------- */
+/* -------------------------------------------------------------------------- */
+/* ---------------------------- VALEUR DE RETOUR: --------------------------- */
+/* ------------------- pointeur sur l'octet correspondant ------------------- */
+/* ----- NULL si le caractère n'est pas présent dans la zone de mémoire ----- */
+/* -------------------------------------------------------------------------- */
 
 #include "libft.h"
 
