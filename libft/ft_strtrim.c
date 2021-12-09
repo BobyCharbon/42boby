@@ -6,13 +6,27 @@
 /*   By: ludovictrombert <ludovictrombert@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/02 11:02:45 by ludovictrom       #+#    #+#             */
-/*   Updated: 2021/12/02 12:30:49 by ludovictrom      ###   ########.fr       */
+/*   Updated: 2021/12/07 00:08:27 by ludovictrom      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/* -------------------------------------------------------------------------- */
+/*                 Alloue avec malloc et retourne une copie de                */
+/* ------------ la chaine ’s1’, sans les caractères spécifiés ------------ */
+/* ------------ dans ’set’ au début et à la fin de la chaine de ----------- */
+/* ------------------------------ caractères. ------------------------------ */
+/* -------------------------------------------------------------------------- */
+/* ----------------- S1 = la chaine de caractères à trimmer ---------------- */
+/* ----------- SET = le set de référence de caractères à trimmer ----------- */
+/* -------------------------------------------------------------------------- */
+/* ---------------------------- VALEUR DE RETOUR: --------------------------- */
+/* -------------------- la chaine de caractères trimmée -------------------- */
+/* ----------------------- NULL si l'allocation échoue ---------------------- */
+/* -------------------------------------------------------------------------- */
+
 #include "libft.h"
 
-static	size_t	string_end(char *s1, char *set, int i)
+static	size_t	ft_string_end(char *s1, char *set, int i)
 {
 	size_t	s1_size;
 	int		k;
@@ -33,7 +47,7 @@ static	size_t	string_end(char *s1, char *set, int i)
 	return (s1_size);
 }
 
-static	size_t	string_start(char *s1, char *set, int k)
+static	size_t	ft_string_start(char *s1, char *set, int k)
 {
 	size_t	i;
 
@@ -68,8 +82,8 @@ char	*ft_strtrim(const char *s1, const char *set)
 		return (NULL);
 	if ((char *) set == NULL)
 		return ((char *) s1);
-	s1_size_start = string_start((char *) s1, (char *) set, k);
-	s1_size_end = string_end((char *) s1, (char *) set, s1_size_start);
+	s1_size_start = ft_string_start((char *) s1, (char *) set, k);
+	s1_size_end = ft_string_end((char *) s1, (char *) set, s1_size_start);
 	tmp = malloc(s1_size_end - s1_size_start + 1 * sizeof(char));
 	if (tmp == NULL)
 		return (NULL);

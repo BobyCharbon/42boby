@@ -3,12 +3,22 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ltromber <ltromber@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ludovictrombert <ludovictrombert@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/02 10:52:34 by ludovictrom       #+#    #+#             */
-/*   Updated: 2021/12/02 11:26:09 by ltromber         ###   ########.fr       */
+/*   Updated: 2021/12/06 23:51:39 by ludovictrom      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/* -------------------------------------------------------------------------- */
+/*      renvoie un pointeur sur une nouvelle chaîne de caractères qui est     */
+/* - dupliquée depuis STR. La mémoire occupée par cette nouvelle chaîne est - */
+/* ----------------------- obtenue en appelant  malloc ---------------------- */
+/* -------------------------------------------------------------------------- */
+/* ---------------------------- VALEUR DE RETOUR: --------------------------- */
+/* ------------------ pointeur sur la chaîne dupliquée, ou ------------------ */
+/* ---------------- NULL s'il n'y avait pas assez de mémoire. --------------- */
+/* -------------------------------------------------------------------------- */
 
 #include "libft.h"
 

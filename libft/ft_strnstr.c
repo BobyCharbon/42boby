@@ -3,12 +3,26 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ltromber <ltromber@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ludovictrombert <ludovictrombert@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/02 10:54:19 by ludovictrom       #+#    #+#             */
-/*   Updated: 2021/12/02 11:29:18 by ltromber         ###   ########.fr       */
+/*   Updated: 2021/12/07 00:05:32 by ludovictrom      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/* -------------------------------------------------------------------------- */
+/*     Trouve la première sous-chaîne dans une chaîne de longueur limitée     */
+/* -------------------------------------------------------------------------- */
+/* --------------- HAYSTACK = la chaine dans laquelle chercher -------------- */
+/* --------------------- NEEDLE = la chaine à rechercher -------------------- */
+/* -------------------------------------------------------------------------- */
+/* ---------------------------- VALEUR DE RETOUR: --------------------------- */
+/* ---------- Si NEEDLE est une chaîne vide, HAYSTACK est retourné ---------- */
+/* ------------- si NEEDLE n'apparaît nulle part dans HAYSTACK, ------------- */
+/* ---------------------------- NULL est retourné --------------------------- */
+/* - sinon, un pointeur vers le premier caractère de la première occurrence - */
+/* ------------------------- de NEEDLE est retourné. ------------------------ */
+/* -------------------------------------------------------------------------- */
 
 #include "libft.h"
 
