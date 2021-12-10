@@ -6,7 +6,7 @@
 /*   By: ltromber <ltromber@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 18:28:19 by ltromber          #+#    #+#             */
-/*   Updated: 2021/12/10 21:55:15 by ltromber         ###   ########.fr       */
+/*   Updated: 2021/12/10 21:57:54 by ltromber         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,9 +25,9 @@ char	*ft_strrchr(const char *str, int c)
 {
 	size_t			str_size;
 
-	str_size = strlen(str);
 	if (!str)
 		return (NULL);
+	str_size = strlen(str);
 	if ((char) c == '\0')
 		return ((char *) str + str_size);
 	while (str_size > 0)
