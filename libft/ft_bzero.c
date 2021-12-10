@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ludovictrombert <ludovictrombert@studen    +#+  +:+       +#+        */
+/*   By: ltromber <ltromber@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 12:06:34 by ltromber          #+#    #+#             */
-/*   Updated: 2021/12/06 23:25:18 by ludovictrom      ###   ########.fr       */
+/*   Updated: 2021/12/10 22:05:42 by ltromber         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,9 @@
 
 void	ft_bzero(void *str, size_t n)
 {
-	size_t	i;
+	ft_memset(str, 0, n);
+	ft_st
+	/* size_t	i;
 	size_t	j;
 	char	*ptr;
 
@@ -35,7 +37,7 @@ void	ft_bzero(void *str, size_t n)
 		ptr[i] = 0;
 		ptr[i] = ptr[j];
 		i++;
-	}
+	} */
 }
 
 // int main (void)
