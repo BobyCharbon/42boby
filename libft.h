@@ -6,7 +6,7 @@
 /*   By: ludovictrombert <ludovictrombert@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 15:51:42 by ltromber          #+#    #+#             */
-/*   Updated: 2021/12/02 13:12:52 by ltromber         ###   ########.fr       */
+/*   Updated: 2022/09/15 15:35:47 by ludovictrom      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@
 # include <ctype.h>
 # include <stdio.h>
 # include <stdbool.h>
+# include "printf/ft_printf.h"
 
 typedef struct s_list
 {

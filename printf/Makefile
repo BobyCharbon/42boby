@@ -16,7 +16,7 @@ all: $(NAME)
 
 $(NAME): $(OBJS)
 	ar -rcs $(NAME) $(OBJS)
-	@echo "OK"
+	@echo "printf OK"
 
 $(OBJS): %.o: %.c $(HEADERS)
 	$(CC) $(CFLAGS) -c $< -o $@
